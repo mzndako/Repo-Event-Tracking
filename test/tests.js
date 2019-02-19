@@ -22,7 +22,7 @@ describe('git_test ', function() {
 		if (file[0] != '.' && file != 'description.txt') {
 			it(testCaseNames[id], (done) => {
 				let i = 0;
-				let event = []; 
+				let event = [];
 				fs.readFileSync(dir + file, 'utf8').toString().split('\n').forEach(function (line) {
 					i += 1;
 					if (line) {
