@@ -2,14 +2,14 @@ const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
 const find = (tableName, where, options)=>{
-  let whereArray = []
+  let where = []
   let sql = `SELECT * FROM ${tableName}`
   if(where && where[0]){
     sql += `where ${where[0]}`
     whereArray = where[1]
   }
   
-  return db.all(sql, whereBi, (err, result) => {
+  return db.all(sql, whereBind, (err, result) => {
     console.log(result)
     if(err){
       return Promise.reject(err)
