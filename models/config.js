@@ -5,7 +5,7 @@ const find = (tableName, where, options)=>{
   let whereArray = []
   let sql = `SELECT * FROM ${tableName}`
   if(where && where[0]){
-    sql += `where ${where[0]}` 
+    sql += `where ${whereA[0]}` 
   }
   return db.all(sql, where[1], (err, result) => {
     console.log(result)
