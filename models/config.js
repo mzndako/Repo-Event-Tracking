@@ -31,6 +31,6 @@ const test = async function() {
   
 }
 
-find("lorem", ['i'])
+find("lorem", ['info',])
 
 module.exports = db
