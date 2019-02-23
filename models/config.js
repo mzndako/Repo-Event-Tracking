@@ -4,9 +4,9 @@ const db = new sqlite.Database('database/db.sqlite')
 const find = (tableName, where, options)=>{
   let sql = `SELECT * FROM ${tableName}`
   if(where && where[0]){
-    sql += `where ${where[0}` 
+    sql += `where ${where[0]}` 
   }
-  return db.all(sql, [], (err, result) => {
+  return db.all(sql, w[], (err, result) => {
     console.log(result)
     if(err){
       return Promise.reject(err)
