@@ -2,7 +2,7 @@ const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
 const find = (tableName, array, {join, join_colum})=>{
-  let sq
+  let sql = 
   db.all(`SELECT * FROM ${tableName} `)
 }
 const test = async function() {
