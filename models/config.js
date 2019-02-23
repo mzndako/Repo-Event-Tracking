@@ -1,5 +1,5 @@
 const sqlite = require('sqlite3').verbose()
-const db = new sqlite3.Database('')
+const db = new sqlite3.Database('mz.j')
 
 db.serialize(function() {
   db.run("CREATE TABLE lorem (info TEXT)");
