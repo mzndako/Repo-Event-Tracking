@@ -1,1 +1,1 @@
-const sqlite3 = require('s')
+const sqlite3 = require('sqlite3')
