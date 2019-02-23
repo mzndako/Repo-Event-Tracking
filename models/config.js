@@ -3,7 +3,9 @@ const db = new sqlite.Database('database/db.sqlite')
 
 const find = (tableName, array, {join, join_colum})=>{
   let sql = `SELECT * FROM ${tableName} `
-  db.all(sql, (err, result) => {})
+  db.all(sql, (err, result) => {
+    return 
+  })
 }
 const test = async function() {
   //db.run("CREATE TABLE lorem (info TEXT)");
