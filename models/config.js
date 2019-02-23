@@ -14,7 +14,7 @@ db.serialize(function() {
   }
   stmt.finalize();
  
-  const mz = awdb.each("SELECT rowid AS id, info FROM lorem");
+  const mz = await db.each("SELECT rowid AS id, info FROM lorem");
 });
 
 module.exports = db
