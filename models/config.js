@@ -13,7 +13,7 @@ const test = async function() {
   //}
   //stmt.finalize();
  
-  db.get("SELECT rowid AS id, info FROM lorem", (err, rows)=>console.log("one time"));
+  db.get("SELECT rowid AS id, info FROM lorem", (err, rows)=>console.log("one time", rows));
   
 }
 
