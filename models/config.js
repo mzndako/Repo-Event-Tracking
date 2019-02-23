@@ -26,6 +26,6 @@ const test = async function() {
   
 }
 
-find()
+find("")
 
 module.exports = db
