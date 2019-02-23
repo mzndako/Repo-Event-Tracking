@@ -1,1 +1,1 @@
-const db = require('c')
+const db = require('config.js')
