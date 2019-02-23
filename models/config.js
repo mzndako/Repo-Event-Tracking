@@ -14,7 +14,7 @@ db.serialize(function() {
   }
   stmt.finalize();
  
-  db.each("SELECT rowid AS id, info FROM lorem", );
+  db.each("SELECT rowid AS id, info FROM lorem");
 });
 
 module.exports = db
