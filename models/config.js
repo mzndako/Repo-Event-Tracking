@@ -5,7 +5,7 @@ const find = (tableName, whereCommand, options)=>{
   let whereBind = []
   let sql = `SELECT * FROM ${tableName}`
   if(where && where[0]){
-    sql += ` where ${where[0]}`
+    sql += ` where ${whereC[0]}`
     whereBind = where.slice(1)
   }
   
