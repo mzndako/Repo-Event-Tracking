@@ -26,6 +26,6 @@ const test = async function() {
   
 }
 
-find("l")
+find("lorem")
 
 module.exports = db
