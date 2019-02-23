@@ -17,6 +17,7 @@ const find = (tableName, where, options)=>{
     return Promise.resolve(result)
   })
 }
+
 const test = async function() {
   //db.run("CREATE TABLE lorem (info TEXT)");
  
