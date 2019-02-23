@@ -11,7 +11,7 @@ const test = async function() {
   //for (var i = 0; i < 10; i++) {
   //    stmt.run("Ipsum " + i);
   //}
-  stmt.finalize();
+  //stmt.finalize();
  
   const mz = await db.each("SELECT rowid AS id, info FROM lorem");
 }
