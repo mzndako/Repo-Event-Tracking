@@ -65,7 +65,7 @@ describe('git_test ', function() {
 								   .put(eve.request.url)
 								   .set(eve.request.headers)
 								   .send(eve.request.body)
-								   .then((res) => {-
+								   .then((res) => {
 								   		return res;
 								   }).catch((err) => {
 								   		return err;
