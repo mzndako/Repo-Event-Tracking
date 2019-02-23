@@ -17,6 +17,5 @@ const test = async function() {
   
 }
 
-db.serialize(test);
 
 module.exports = db
