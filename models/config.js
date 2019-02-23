@@ -6,7 +6,7 @@ const find = (tableName, where, options)=>{
   if(where && where[0]){
     sql += where[0]
   }
-  return db.all(sql, ['Ipsum 0'], (err, result) => {
+  return db.all(sql, ['Ipsum '], (err, result) => {
     console.log(result)
     if(err){
       return Promise.reject(err)
