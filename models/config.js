@@ -1,7 +1,7 @@
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
-const find = (tableName, array, {join, join})=>{
+const find = (tableName, array, {join, join_colum})=>{
   
   db.all(`SELECT * ${tableName} from `)
 }
