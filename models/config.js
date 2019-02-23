@@ -5,7 +5,7 @@ const find = (tableName, array, {join, join_colum})=>{
   let sql = `SELECT * FROM ${tableName} `
   return db.all(sql, (err, result) => {
     if(err){
-      return Promise.reject()
+      return Promise.reject(err)
     }
     return Promise.resolve(result)
   })
