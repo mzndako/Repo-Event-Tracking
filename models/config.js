@@ -10,7 +10,7 @@ const find = (tableName, where, options)=>{
   }
   
   return db.all(sql, whereBind, (err, result) => {
-    console.log(result,)
+    console.log(result, err)
     if(err){
       return Promise.reject(err)
     }
