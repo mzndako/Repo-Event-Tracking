@@ -1,7 +1,7 @@
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite3.Database('database/db')
 
-modu
+module.expor
 db.serialize(function() {
   db.run("CREATE TABLE lorem (info TEXT)");
  
