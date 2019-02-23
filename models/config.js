@@ -17,5 +17,5 @@ const test = async function() {
   
 }
 
-test()
+test().then()
 module.exports = db
