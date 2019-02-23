@@ -1,1 +1,1 @@
-const sqlite3 = req
+const sqlite3 = require
