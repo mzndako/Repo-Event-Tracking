@@ -12,7 +12,7 @@ const test = async function() {
   //    stmt.run("Ipsum " + i);
   //}
   //stmt.finalize();
- db.get("SELECT rowid AS id, info FROM lorem").then(result=>console.)
+ db.get("SELECT rowid AS id, info FROM lorem").then(result=>console.log(r))
   const mz = await db.get("SELECT rowid AS id, info FROM lorem");
   console.log(mz)
 }
