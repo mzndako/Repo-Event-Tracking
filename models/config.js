@@ -8,7 +8,7 @@ const find = (tableName, where, options)=>{
   }
   return db.all(sql, [], (err, result) => {
     console.log(result)
-    if(err){
+    if(err){ 
       return Promise.reject(err)
     }
     return Promise.resolve(result)
