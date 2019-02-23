@@ -6,7 +6,7 @@ const find = (tableName, whereCommand, options)=>{
   let sql = `SELECT * FROM ${tableName}`
   if(whereCommand && whereCommand[0]){
     sql += ` where ${whereCommand[0]}`
-    whereBind = whereC.slice(1)
+    whereBind = whereCommand.slice(1)
   }
   
   return db.all(sql, whereBind, (err, result) => {
