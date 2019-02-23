@@ -1,6 +1,8 @@
 
 var getAllEvents = () => {
-  if()
+  if(){
+      
+  }
 };
 
 var addEvent = () => {
