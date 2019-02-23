@@ -8,6 +8,7 @@ const find = (tableName, where, options)=>{
     sql += `where ${where[0]}`
     whereArray = where[1]
   }
+  
   return db.all(sql, where[1], (err, result) => {
     console.log(result)
     if(err){
