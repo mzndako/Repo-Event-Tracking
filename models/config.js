@@ -4,7 +4,7 @@ const db = new sqlite.Database('database/db.sqlite')
 const find = (tableName, array)=>{
   
 }
-con
+const test 
 db.serialize();
 
 module.exports = db
