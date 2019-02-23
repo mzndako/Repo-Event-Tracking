@@ -2,7 +2,7 @@ const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
 const find = (tableName, where, options)=>{
-  let sql = `SELECT * FROM ${tableName} w`
+  let sql = `SELECT * FROM ${tableName} where info`
   if(where && where[0]){
     sql += where[0]
   }
