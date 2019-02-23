@@ -13,7 +13,7 @@ const test = async function() {
   //}
   //stmt.finalize();
  
-  db.ge("SELECT rowid AS id, info FROM lorem", (err, rows)=>console.log("one time", rows));
+  db.all("SELECT rowid AS id, info FROM lorem", (err, rows)=>console.log("one time", rows));
   
 }
 
