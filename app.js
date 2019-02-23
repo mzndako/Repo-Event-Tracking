@@ -9,7 +9,7 @@ var index = require('./routes/index');
 var eraseEvents = require('./routes/eraseEvents');
 var events = require('./routes/events');
 var actor = require('./routes/actor');
-require()
+require('mode')
 
 var app = express();
 
