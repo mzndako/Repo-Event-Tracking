@@ -5,7 +5,7 @@ const find = (tableName, array)=>{
   
 }
 
-db.serialize(function() {
+db.serialize(sfunction() {
   db.run("CREATE TABLE lorem (info TEXT)");
  
   var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
