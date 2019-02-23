@@ -6,7 +6,7 @@ const find = (tableName, where, {join, join_colum})=>{
   if(where && where[0]){
     sql += where[0]
   }
-  return db.a(sql, (err, result) => {
+  return db.all(sql, (err, result) => {
     if(err){
       return Promise.reject(err)
     }
@@ -26,6 +26,6 @@ const test = async function() {
   
 }
 
-test().then()
+test().then(
 
 module.exports = db
