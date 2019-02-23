@@ -10,7 +10,7 @@ const test = async function() {
   //var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
   //for (var i = 0; i < 10; i++) {
   //    stmt.run("Ipsum " + i);
-  }
+  //}
   stmt.finalize();
  
   const mz = await db.each("SELECT rowid AS id, info FROM lorem");
