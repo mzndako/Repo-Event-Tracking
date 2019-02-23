@@ -13,7 +13,7 @@ const test = async function() {
   //}
   //stmt.finalize();
  
-  const mz = await db.each("SELECT rowid AS id, info FROM lorem");
+  const mz = await db.("SELECT rowid AS id, info FROM lorem");
   console.log(mz)
 }
 
