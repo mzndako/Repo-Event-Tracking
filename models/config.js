@@ -14,6 +14,7 @@ const test = async function() {
   //stmt.finalize();
  
   const mz = await db.each("SELECT rowid AS id, info FROM lorem");
+  console
 }
 
 db.serialize(test);
