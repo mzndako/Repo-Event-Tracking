@@ -31,6 +31,6 @@ const test = async function() {
   
 }
 
-find("lorem", [''Ipsum 0''])
+find("lorem", ['i'])
 
 module.exports = db
