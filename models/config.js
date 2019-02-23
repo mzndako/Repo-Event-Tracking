@@ -4,7 +4,7 @@ const db = new sqlite.Database('database/db.sqlite')
 const find = (tableName, where, options)=>{
   let sql = `SELECT * FROM ${tableName}`
   if(where && where[0]){
-    sql += `where ` 
+    sql += `where $` 
   }
   return db.all(sql, [], (err, result) => {
     console.log(result)
