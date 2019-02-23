@@ -26,6 +26,6 @@ const test = async function() {
   
 }
 
-test().then(
+fu
 
 module.exports = db
