@@ -13,7 +13,7 @@ const test = async function() {
   //}
   //stmt.finalize();
  db.get("SELECT rowid AS id, info FROM lorem").then(result=>console.log(result))
-  const mz = await db.get("SELECT rowid AS id, info FROM lorem");
+  const mz = await db.("SELECT rowid AS id, info FROM lorem");
   console.log(mz)
 }
 
