@@ -9,7 +9,7 @@ const find = (tableName, where, options)=>{
     whereArray = where[1]
   }
   
-  return db.all(sql, where[1, (err, result) => {
+  return db.all(sql, whereAr, (err, result) => {
     console.log(result)
     if(err){
       return Promise.reject(err)
