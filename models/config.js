@@ -4,7 +4,7 @@ const db = new sqlite.Database('database/db.sqlite')
 const find = (tableName, array, {join, join_colum})=>{
   let sql = `SELECT * FROM ${tableName} `
   return db.all(sql, (err, result) => {
-    
+    if(err)
     return Promise.resolve(result)
   })
 }
