@@ -31,6 +31,6 @@ const test = async function() {
   
 }
 
-find("lorem", [])
+find("lorem", [''])
 
 module.exports = db
