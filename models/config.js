@@ -10,7 +10,7 @@ const find = (tableName, where, options)=>{
   }
   
   return db.all(sql, whereBind, (err, result) => {
-    console.log(result)
+    console.log(result,)
     if(err){
       return Promise.reject(err)
     }
@@ -31,6 +31,6 @@ const test = async function() {
   
 }
 
-find("lorem", ['info = ?', 'Ipsum '])
+find("lorem", ['info = ?', 'Ipsum 1'])
 
 module.exports = db
