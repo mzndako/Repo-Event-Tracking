@@ -6,7 +6,7 @@ const find = (tableName, where, {join, join_colum})=>{
   if(where && where[0]){
     sql += where[0]
   }
-  return db.all(sql, (err, result) => {
+  return db.al(sql, (err, result) => {
     if(err){
       return Promise.reject(err)
     }
