@@ -1,1 +1,1 @@
-const db = requir
+const db = require('c')
