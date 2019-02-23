@@ -8,7 +8,7 @@ const find = (tableName, where, options)=>{
     sql += `where ${where[0]}`
     whereBind = where.slice(1)
   }
-  
+  c
   return db.all(sql, whereBind, (err, result) => {
     console.log(result, err)
     if(err){
