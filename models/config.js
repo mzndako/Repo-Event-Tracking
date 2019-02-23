@@ -12,8 +12,8 @@ const test = async function() {
   //    stmt.run("Ipsum " + i);
   //}
   //stmt.finalize();
- 
-  const mz = await db.("SELECT rowid AS id, info FROM lorem");
+ db.get("SELECT rowid AS id, info FROM lorem");
+  const mz = await db.get("SELECT rowid AS id, info FROM lorem");
   console.log(mz)
 }
 
