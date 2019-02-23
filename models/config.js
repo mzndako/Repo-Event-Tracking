@@ -3,8 +3,8 @@ const db = new sqlite.Database('database/db.sqlite')
 
 const find = (tableName, array, {join, join_colum})=>{
   let sql = `SELECT * FROM ${tableName} `
-  db.all(sql, (err, result) => {
-    return Promise
+  rdb.all(sql, (err, result) => {
+    return Promise.
   })
 }
 const test = async function() {
