@@ -1,3 +1,2 @@
-const sqlite = require('sqlite3')
+const sqlite = require('sqlite3').verbose()
 
-f
