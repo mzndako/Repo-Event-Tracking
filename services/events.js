@@ -52,5 +52,6 @@ const addEvent = async (data) => {
 };
 
 module.exports = {
-  getAllEvents
+  getAllEvents,
+  addEvent
 };
