@@ -70,7 +70,7 @@ const processEvent = (events) => {
      let value = {
        id: result.event_id,
        type: result.type,
-        actor: {
+       actor: {
           id: result.actor_id,
           login: result.login,
           avatar_url: result.avatar_url
