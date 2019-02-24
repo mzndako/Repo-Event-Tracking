@@ -60,6 +60,7 @@ const getByActor = (actorId) => {
   
 }
 
+const pr
 
 module.exports = {
   getAllEvents,
