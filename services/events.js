@@ -1,3 +1,3 @@
 const database = require('./../models/config');
 
-module.e
+module.exports
