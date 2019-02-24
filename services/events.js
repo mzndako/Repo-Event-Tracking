@@ -8,7 +8,7 @@ const getAllEvents = () => {
   }).catch(error => Promise.reject(error));
 };
 
-const addEvent = (d) => {
+const addEvent = (data) => {
   
 }
 
