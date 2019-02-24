@@ -15,7 +15,9 @@ const getAllEvents = () => {
           login: result.login,
           avatar_url: result.avatar_url
         },
-        repo: 
+        repo: {
+          i
+        }
       }
     }
     return Promise.resolve(results);
