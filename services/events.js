@@ -34,12 +34,12 @@ const addEvent = async (data) => {
     }
     
     // Search whether the repo exist in the repos TABLE
-    sql = 'SELECT id FROM actors where id = ?';
+    sql = 'SELECT id FROM repos where id = ?';
     bindParam = [data.actor.id];
     results = database.find(sql, bindParam);
     if (results.length === 0){
       // Create a new user as this does exist
-      sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
+      sql = 'INSERT INTO repos (id, login, avatar_url) VALUES (?, ?, ?)';
       bindParam = [data.actor.id, data.actor.login, data.actor.avatar_url];
       await database.insert(sql, bindParam);
     }
