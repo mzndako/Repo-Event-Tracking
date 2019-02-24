@@ -13,7 +13,7 @@ db.setupDatabase = () => {
  * @param {Array} whereBind - The array of bind value for the where statement
  * @return The query result as a promise
  */
-db.find = async (query, whereBind=[])=>{
+db.find = (query, whereBind=[])=>{
   console.log(query)
   db.all(query, whereBind, (err, result) => {
     console.log(result, err)
