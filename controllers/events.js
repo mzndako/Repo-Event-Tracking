@@ -28,7 +28,7 @@ const addEvent = (req, res) => {
   }
   
   eventsServices.addEvent(data).then(result => {
-    
+    return pro
   }).catch(error => res.status(400).send(processError(error)));
 };
 
