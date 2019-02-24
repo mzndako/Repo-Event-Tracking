@@ -1,5 +1,5 @@
 const eventsServices = require('./../services/events');
-
+const {validate, processError} = require('./../services/validator');
 /**
  * Get all events
  * @param {Object} req - The Request Object
@@ -12,7 +12,7 @@ const getAllEvents = (req, res) => {
   });
 };
 
-var addEvent = () => {
+const addEvent = () => {
 
 };
 
