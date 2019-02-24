@@ -20,7 +20,7 @@ db.find = (query, whereBind=[])=>{
       console.log(result, err);
       if(err){
         reject(err);
-      }
+      };
         resolve(result)
     })
   }) 
