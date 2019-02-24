@@ -12,9 +12,9 @@ const find = (query, whereBind=[])=>{
 }
 
 const insert = (query, values) => {
-  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
-  for (var i = 0; i < values.length; i++) {
-      stmt.run();
+  var stm = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (let i = 0; i < values.length; i++) {
+    stmt.run(values[i]);
   }
   stmt.finalize();
 }
