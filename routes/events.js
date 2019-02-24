@@ -3,5 +3,5 @@ var router = express.Router();
 
 // Routes related to event
 
-router.get("")
+router.get("/event")
 module.exports = router;
