@@ -1,7 +1,7 @@
 const database = require('./../models/config');
 
 const getAllEvents = () => {
-  database.fi
+  database.find()
 };
 
 module.exports = {
