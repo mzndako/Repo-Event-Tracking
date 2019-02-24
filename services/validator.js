@@ -1,6 +1,6 @@
 /**
  * Valid request
  */
- const validate = (expec) => {
+ const validate = (arr) => {
    
  }
