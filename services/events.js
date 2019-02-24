@@ -16,14 +16,9 @@ const addEvent = async (data) => {
     if (results.length > 0){
       return Promise.reject("Event already created")
     }
-    
-    // Insert into the events TABLE
     sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
-    bindParam = [data.id, data.type, data.actor.id, data.repo.id, new Date()];
-    await database.insert(sql, bindParam);
-    
-    // Insert into the 
-    
+    bindParam = [data.id, data.type, da]
+    await database.insert
   }catch(error){
     return Promise.reject(error);
   }
