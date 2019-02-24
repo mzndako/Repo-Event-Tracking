@@ -76,7 +76,7 @@ const addEvent = async (data) => {
  * @param {Integer} actorId - Actor Id
  */
 const getByActor = (actorId) => {
-  db.get
+  
 }
 
 module.exports = {
