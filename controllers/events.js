@@ -1,7 +1,7 @@
 /**
  * Get all events
  */
-const getAllEvents = (req, res) => {
+const getAllEvents = (req, res, next) => {
     
 };
 
