@@ -43,7 +43,7 @@ const addEvent = (req, res) => {
  * Get events by actor
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
- * @return Response Resource
+ * @return 
  */
 const getByActor = (req, res) => {
   let actorId = req.params.actorId;
