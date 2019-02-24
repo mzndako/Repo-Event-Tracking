@@ -1,5 +1,6 @@
 /**
  * Get all events
+
  */
 const getAllEvents = (req, res) => {
     
