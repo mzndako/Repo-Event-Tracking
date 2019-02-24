@@ -73,7 +73,7 @@ const eraseEvents = () => {
   let sql = 'DELETE FROM events';
   
   return database.delete(sql).then(events => {
-    return Promise.resolve(eve);
+    return Promise.resolve(resu);
   }).catch(error => Promise.reject(error));
 }
 
