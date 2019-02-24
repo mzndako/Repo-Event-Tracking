@@ -39,7 +39,7 @@ const addEvent = async (data) => {
     results = database.find(sql, bindParam);
     if (results.length === 0){
       // Create a new user as this does exist
-      sql = 'INSERT INTO repos (id, login, avatar_url) VALUES (?, ?, ?)';
+      sql = 'INSERT INTO repos (id, name, url) VALUES (?, ?, ?)';
       bindParam = [data.actor.id, data.actor.login, data.actor.avatar_url];
       await database.insert(sql, bindParam);
     }
