@@ -8,8 +8,9 @@ const getAllEvents = () => {
   }).catch(error => Promise.reject(error));
 };
 
-const addEvent = (data) => {
-  
+const addEvent = async (data) => {
+
+  await database.insert
 }
 
 module.exports = {
