@@ -9,7 +9,7 @@
    let sendError = {};
    if (typeof error === 'string') {
      
-   }
+   };
  }
  
  module.exports = {
