@@ -46,7 +46,7 @@ const getByActor = (req, res) => {
   }
   
   eventsServices.getByActor(actorId).then(events => {
-    res.status
+    res.status(200)
   })
 };
 
