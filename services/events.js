@@ -22,7 +22,7 @@ const getAllEvents = () => {
         },
         created_at: result.created_at
       };
-      
+      processedResults.push(value);
     }
     return Promise.resolve(processedResults);
   }).catch(error => Promise.reject(error));
