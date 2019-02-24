@@ -27,7 +27,7 @@ const addEvent = (req, res) => {
     'actor': 'Please provide actor',
     'repo': 'Please provide a valid repo detail'
   };
-  
+
   // Make sure the needed are sent to the server
   let validated = validate(data, validationRule);
   if (validated !== true) {
