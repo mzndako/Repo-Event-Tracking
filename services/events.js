@@ -4,7 +4,8 @@ const getAllEvents = () => {
   let sql = 'SELECT * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id';
   
   return database.find(sql).then(results => {
-    let processee
+    let processedResults = [];
+    f
     return Promise.resolve(results);
   }).catch(error => Promise.reject(error));
 };
