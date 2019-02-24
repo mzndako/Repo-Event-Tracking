@@ -23,8 +23,8 @@ const addEvent = async (data) => {
     await database.insert(sql, bindParam);
     
     // Search whether the user exist in the actor TABLE
-    let sql = 'SELECT id FROM actors where id = ?';
-    let bindParam = [data.actor.id];
+    sql = 'SELECT id FROM actors where id = ?';
+    bindParam = [data.actor.id];
     let results = database.find(sql, bindParam);
     if (results.length > 0){
       return Promise.reject("Event already created")
