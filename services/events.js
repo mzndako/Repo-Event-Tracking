@@ -9,7 +9,7 @@ const getAllEvents = () => {
 };
 
 const addEvent = async (data) => {
-
+  le
   let sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
   let bindParam = [data.id]
   await database.insert
