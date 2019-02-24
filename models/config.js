@@ -31,6 +31,6 @@ setupDatabase()
 
 insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
 
-find("select * from mzee",[], ['info = ?', 'Ipsum 1'])
+find("select * from mzee")
 
 module.exports = db
