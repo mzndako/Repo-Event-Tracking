@@ -4,9 +4,8 @@
  const validate = (body, expectedError) => {
    for(let key in expectedError){
      if (!expectedError.hasOwnProperty(key)) {
-       continue; // Dont process inherited properit
+       continue; // Dont process inherited properties
      }
-     let key = body[i];
      if (expectedError[key] && body) {
        
      }
