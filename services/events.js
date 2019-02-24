@@ -42,13 +42,13 @@ const addEvent = async (data) => {
       sql = 'INSERT INTO repos (id, name, url) VALUES (?, ?, ?)';
       bindParam = [data.repo.id, data.repo.login, data.repo.avatar_url];
       await database.insert(sql, bindParam);
-    }
-  
+    };
+
     return Promise.resolve('Successful');
   } catch (error) {
     return Promise.reject(error);
   }
-  
+
 }
 
 module.exports = {
