@@ -40,7 +40,7 @@ const addEvent = (req, res) => {
 };
 
 const getByActor = (req, res) => {
-  let actor
+  let actorId
 };
 
 
