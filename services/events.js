@@ -22,7 +22,7 @@ const addEvent = async (data) => {
     bindParam = [data.id, data.type, data.actor.id, data.repo.id, new Date()];
     await database.insert(sql, bindParam);
     
-    // s actor TABLE
+    // Searc actor TABLE
     let sql = 'SELECT id FROM events where id = ?';
     let bindParam = [data.id];
     let results = database.find(sql, bindParam);
