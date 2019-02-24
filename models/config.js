@@ -29,4 +29,5 @@ setupDatabase()
 
 insert("insert into events (id) VALUES (?)", [44343434])
 
+
 module.exports = db
