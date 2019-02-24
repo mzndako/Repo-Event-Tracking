@@ -23,14 +23,15 @@ const find = async (query, whereBind=[])=>{
 const insert = async (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
-  return statement.finalize(a=>console.log("aaa", a))
+  const x = statement.finalize(a=>console.log("aaa", a))
+  console.log("xxx," , x)
 }
 
  
 setupDatabase()
 
-var x = await insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
-console.log(x, "bbbbb")
+insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
+
 find("select * from mzee")
 
 module.exports = db
