@@ -23,7 +23,7 @@ const addEvent = async (data) => {
     await database.insert(sql, bindParam);
     
     // Search whether the user exist in the actor TABLE
-    let sql = 'SELECT id FROM events where id = ?';
+    let sql = 'SELECT id FROM actors where id = ?';
     let bindParam = [data.id];
     let results = database.find(sql, bindParam);
     if (results.length > 0){
