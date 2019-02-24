@@ -1,4 +1,4 @@
-const eventsService
+const eventsServices = 
 /**
  * Get all events
  * @param {Object} req - The Request Object
