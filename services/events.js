@@ -33,7 +33,7 @@ const addEvent = async (data) => {
       await database.insert(sql, bindParam);
     }
     
-    // Search whether the r exist in the actor TABLE
+    // Search whether the repo exist in the repos TABLE
     sql = 'SELECT id FROM actors where id = ?';
     bindParam = [data.actor.id];
     results = database.find(sql, bindParam);
