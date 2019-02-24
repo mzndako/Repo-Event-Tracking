@@ -5,7 +5,7 @@
    for(let key in expectedError){
      if (!expectedError.hasOwnProperty(key)) {
        continue; // Dont process inherited properties
-     }
+     };
      if (!body[key]) {
        return expectedError[key];
      };
