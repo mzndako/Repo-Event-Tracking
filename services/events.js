@@ -1,7 +1,7 @@
 const database = require('./../models/config');
 
 const getAllEvents = () => {
-  let sql = 'SELE'
+  let sql = 'SELECT * '
   database.find()
 };
 
