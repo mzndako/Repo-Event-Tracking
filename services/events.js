@@ -60,6 +60,7 @@ const getByActor = (actorId) => {
   
 }
 
+
 module.exports = {
   getAllEvents,
   addEvent
