@@ -22,7 +22,8 @@ const addEvent = async (data) => {
     bindParam = [data.id, data.type, data.actor.id, data.repo.id, new Date()];
     await database.insert(sql, bindParam);
     
-    // Insert into the actor 
+    // Insert into the actor TABLE
+    
     
   }catch(error){
     return Promise.reject(error);
