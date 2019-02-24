@@ -46,7 +46,7 @@ const getByActor = (req, res) => {
   }
   
   eventsServices.getByActor(actorId).then(events => {
-    if (events.length === 0){
+    if (events.length === 0) {
       
     }
     res.status(200).send(events);
