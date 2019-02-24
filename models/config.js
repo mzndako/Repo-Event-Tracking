@@ -35,7 +35,7 @@ db.insert = async (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
   return statement.finalize(a=>console.log("aaa", a))
-  x," , x)
+  
 }
 
  
