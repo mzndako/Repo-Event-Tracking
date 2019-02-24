@@ -41,6 +41,7 @@ db.insert = async (query, values) => {
   statement.run(values) // Bind the values
   return statement.finalize()
 }
+
 /**
  * Insert into the database
  * @param {String} query - The insert query String
