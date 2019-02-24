@@ -6,7 +6,7 @@
      if (!expectedError.hasOwnProperty(key)) {
        continue; // Dont process inherited properties
      }
-     if (expectedError[key] && body) {
+     if (body[key]) {
        
      }
    }
