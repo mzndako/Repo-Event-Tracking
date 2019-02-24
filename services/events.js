@@ -14,14 +14,15 @@ const addEvent = async (data) => {
     let bindParam = [data.id];
     let results = database.find(sql, bindParam);
     if (results.length > 0){
-      return Promise.reject("")
+      return Promise.reject("Event already created")
     }
+    sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
+    bindParam = [data.id]
+    await database.insert
   }catch(error){
     return Promise.reject(error);
   }
-  sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
-  bindParam = [data.id]
-  await database.insert
+  
 }
 
 module.exports = {
