@@ -1,6 +1,6 @@
 /**
  * Get all events
-
+ * @param
  */
 const getAllEvents = (req, res) => {
     
