@@ -50,7 +50,7 @@ const getByActor = (req, res) => {
       return res.status(404).send(processError('Actor Id not found'));
     }
     res.status(200).send(events);
-  }).catch(error => res.status(404).send(processError(error)))
+  }).catch(error => res.status(404).send(processError(error)));
 };
 
 
