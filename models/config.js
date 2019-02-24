@@ -34,7 +34,7 @@ db.find = async (query, whereBind=[])=>{
 db.insert = async (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
-  const x = await statement.finalize(a=>console.log("aaa", a))
+  statement.finalize(a=>console.log("aaa", a))
   console.log("xxx," , x)
 }
 
