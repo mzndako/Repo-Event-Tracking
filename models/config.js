@@ -46,7 +46,7 @@ db.insert = async (query, values) => {
 db.setupDatabase()
 
 //db.find('SELECT * FROM events ')
-
+db.update("UPDATE actors SET ")
 db.find('SELECT * FROM actors ')
 //db.find('SELECT * FROM repos ')
 
