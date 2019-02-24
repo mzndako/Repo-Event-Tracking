@@ -22,7 +22,7 @@ const addEvent = (req, res) => {
     'repo': 'Please provide a valid repo detail'
   };
   
-  let validated = validate(data, ) 
+  let validated = validate(data, validatRule) 
 };
 
 
