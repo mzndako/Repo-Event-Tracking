@@ -84,6 +84,7 @@ const processEvent = (events) => {
       };
       processedResults.push(value);
     }
+
 }
 
 module.exports = {
