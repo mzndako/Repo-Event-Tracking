@@ -1,7 +1,7 @@
 const actorsServices = require('./../services/actors')
 
 var getAllActors = () => {
-  actorsServices.g
+  actorsServices.getAllActors
 };
 
 var updateActor = () => {
