@@ -17,7 +17,7 @@ const insert = (query, values) => {
     statement.run(values[i])
   }
   const x = statement.finalize()
-  console
+  console.log()
 }
 
 const test = async function() {
