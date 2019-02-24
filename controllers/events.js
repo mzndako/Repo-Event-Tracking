@@ -14,8 +14,7 @@ const getAllEvents = (req, res) => {
 };
 
 const addEvent = (req, res) => {
-  let data = req.body;
-  let validated = validate(data) 
+  let data = req.body
 };
 
 
