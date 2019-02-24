@@ -1,1 +1,1 @@
-const database = require('./../m')
+const database = require('./../models/')
