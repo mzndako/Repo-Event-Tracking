@@ -1,1 +1,1 @@
-const database = require('./../models/config');
+const database =  require('./../models/config');
