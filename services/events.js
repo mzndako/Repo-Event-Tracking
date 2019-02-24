@@ -61,7 +61,7 @@ const getByActor = (actorId) => {
 }
 
 /**
- * 
+ * Convert the r
  */
 const processEvent = () => {
   
