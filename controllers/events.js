@@ -1,4 +1,5 @@
 const eventsServices = require('./../services/events');
+
 /**
  * Get all events
  * @param {Object} req - The Request Object
@@ -6,7 +7,7 @@ const eventsServices = require('./../services/events');
  * @return null
  */
 const getAllEvents = (req, res) => {
-  
+  e
 };
 
 var addEvent = () => {
