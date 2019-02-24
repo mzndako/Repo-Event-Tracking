@@ -71,6 +71,7 @@ const addEvent = async (data) => {
   }
 };
 
+
 module.exports = {
   getAllEvents,
   addEvent
