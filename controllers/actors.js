@@ -3,7 +3,7 @@ const actorsServices = require('./../services/actors')
 var getAllActors = () => {
   actorsServices.getAllActors().then(actors => {
     
-  }).catch(error => res.status(400).send())
+  }).catch(error => res.status(400).send(processError(error)))
 };
 
 var updateActor = () => {
