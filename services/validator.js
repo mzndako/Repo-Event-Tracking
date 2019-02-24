@@ -22,7 +22,7 @@ const processError = (error) => {
  };
  return sendError;
 };
- 
+
 module.exports = {
    validate,
    processError
