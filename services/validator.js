@@ -6,8 +6,8 @@ const validate = (body, expectedError) => {
    if (!expectedError.hasOwnProperty(key)) {
      continue; // Dont process inherited properties
    };
-     if (!body[key]) {
-       return expectedError[key];
+   if (!body[key]) {
+     return expectedError[key];
      };
    };
    return true;
