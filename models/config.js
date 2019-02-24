@@ -14,7 +14,7 @@ const find = (query, whereBind=[])=>{
 const insert = (query, values) => {
   var statement = db.prepare("INSERT INTO lorem VALUES (?)");
   for (let i = 0; i < values.length; i++) {
-    stmt.run(values[i]);
+    statement.run(values[i]);
   }
   stmt.finalize();
 }
