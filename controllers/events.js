@@ -45,7 +45,7 @@ const getByActor = (req, res) => {
     return res.status(400).send(processError('Invalid Actor Id'));
   }
   
-  eventsServices.getByActor(actorId).t
+  eventsServices.getByActor(actorId).then()
 };
 
 
