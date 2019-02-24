@@ -7,7 +7,7 @@
  
  const processError = (error) => {
    let sendError = {};
-   if(typeof error === 'string')
+   if(typeof error === 'string') 
  }
  
  module.exports = {
