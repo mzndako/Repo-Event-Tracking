@@ -42,7 +42,7 @@ const addEvent = (req, res) => {
 const getByActor = (req, res) => {
   let actorId = req.params.actorId;
   if (!actorId) {
-    return res.status(400).send(processError('In'))
+    return res.status(400).send(processError('Invalid Act'))
   }
 };
 
