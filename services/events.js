@@ -23,7 +23,12 @@ const addEvent = async (data) => {
     await database.insert(sql, bindParam);
     
     // Insert into the actor TABLE
-    sql 
+    let sql = 'SELECT id FROM events where id = ?';
+    let bindParam = [data.id];
+    let results = database.find(sql, bindParam);
+    if (results.length > 0){
+      return Promise.reject("Event already created")
+    }
     sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
     
     
