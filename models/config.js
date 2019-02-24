@@ -54,7 +54,7 @@ db.update = async (query, values) => {
 }
 
 /**
- * Delete e
+ * Delete entry in a ta
  */
 
  
