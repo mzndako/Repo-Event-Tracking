@@ -28,6 +28,6 @@ const insert = async (query, values) => {
 setupDatabase()
 
 //insert("insert into events (id) VALUES (?)", [44343434])
-//find
+//find("")
 
 module.exports = db
