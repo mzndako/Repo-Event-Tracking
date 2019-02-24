@@ -96,4 +96,5 @@ const processEvents = (events) => {
 module.exports = {
   getAllEvents,
   addEvent,
+  getBy
 };
