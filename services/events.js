@@ -9,12 +9,12 @@ const getAllEvents = () => {
 };
 
 const addEvent = async (data) => {
-  let sql = 'SELECT id FROM events where id = ?';
-  let bindParam = [data.id];
-  
-    
+  try{
+    let sql = 'SELECT id FROM events where id = ?';
+    let bindParam = [data.id];
+    d
   }catch(error){
-    
+    return Promise.reject(error);
   }
   sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
   bindParam = [data.id]
