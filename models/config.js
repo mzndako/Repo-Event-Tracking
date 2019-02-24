@@ -3,7 +3,7 @@ const db = new sqlite.Database('database/db.sqlite')
 
 const setupDatabase = () => {
   try{
-    db.run('CREATE TABLE IF NOT EXISTS mz(ID integer NOT NULL PRIMARY KEY, name text)')
+    db.run('CREATE TABLE IF NOT EXISTS mzEE(mz te, name text)')
   }catch(error){
     console.log(error)
   }
