@@ -3,7 +3,7 @@
  */
  const validate = (array) => {
    
- }
+ };
  
  const processError = (error) => {
    let sendError = {};
