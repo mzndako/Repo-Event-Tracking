@@ -2,6 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 // Route related to delete events
-router.
+router.delete
 
 module.exports = router;
