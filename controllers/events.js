@@ -15,14 +15,15 @@ const getAllEvents = (req, res) => {
 
 const addEvent = (req, res) => {
   let data = req.body;
-  let validateRule = {
+  let validationRule = {
     'id': 'Please provide a valid Id',
     'type': 'Please provide a type',
     'actor': 'Please provide actor',
     'repo': 'Please provide a valid repo detail'
   };
   
-  let validated = validate(data, validatRule) 
+  let validated = validate(data, validationRule);
+  if(validated !)
 };
 
 
