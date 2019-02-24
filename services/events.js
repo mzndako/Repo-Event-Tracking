@@ -23,7 +23,7 @@ const addEvent = async (data) => {
     await database.insert(sql, bindParam);
     
     // Insert into the actor TABLE
-    
+    sql = 'INSERT INTO actors '
     
   }catch(error){
     return Promise.reject(error);
