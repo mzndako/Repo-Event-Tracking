@@ -13,7 +13,7 @@ const getAllEvents = (req, res) => {
   });
 };
 
-const addEvent = (r) => {
+const addEvent = (req, res) => {
   
 };
 
