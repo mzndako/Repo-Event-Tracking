@@ -11,7 +11,8 @@ db.setupDatabase = () => {
 /**
  * Query the database
  * @param {String} - SQL String
- * @param {Array} - The array of bind value for the where stateme
+ * @param {Array} - The array of bind value for the where statement
+ * #
  */
 db.find = async (query, whereBind=[])=>{
   console.log(query)
