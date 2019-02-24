@@ -29,7 +29,7 @@ const addEvent = async (data) => {
     if (results.length === 0){
       // Create a new user as this does exist
       sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
-      bindParam = [data.actor]
+      bindParam = [data.actor.id, data]
       database.insert(sql, bindParam);
     }
     
