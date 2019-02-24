@@ -29,7 +29,7 @@ const addEvent = (req, res) => {
   
   eventsServices.addEvent(data).then(result => {
     
-  }).catch(erro)
+  }).catch(error => res.sta)
 };
 
 
