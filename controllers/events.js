@@ -2,10 +2,10 @@
  * Get all events
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
- * @return nu
+ * @return null
  */
 const getAllEvents = (req, res) => {
-    
+
 };
 
 var addEvent = () => {
