@@ -11,7 +11,13 @@ const find = (tableName, whereBind=[])=>{
   })
 }
 
-const 
+const insert = () => {
+  var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+  for (var i = 0; i < 10; i++) {
+      stmt.run("Ipsum " + i);
+  }
+  stmt.finalize();
+}
 
 const test = async function() {
   //db.run("CREATE TABLE lorem (info TEXT)");
