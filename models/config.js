@@ -25,6 +25,7 @@ db.find = async (query, whereBind=[])=>{
   })
 }
 
+
 db.insert = async (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
