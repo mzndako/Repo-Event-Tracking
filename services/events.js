@@ -6,9 +6,9 @@ const getAllEvents = () => {
   return database.find(sql).then(results => {
     let processedResults = [];
     for(let i = 0; i < results.length; i++){
-      let result = results[0];
+      let result = results[i];
       let value = {
-        id: result.id,
+        id: result.,
         type: result.type,
         actor: {
           id: result.actor_id,
