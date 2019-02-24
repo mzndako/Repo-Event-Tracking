@@ -1,2 +1,2 @@
 const database =  require('./../models/config');
-database.
+database.fss()
