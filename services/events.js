@@ -1,5 +1,8 @@
 const database = require('./../models/config');
 
+/**
+ * Retrieve all events
+ */
 const getAllEvents = () => {
   let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id';
 
@@ -9,6 +12,10 @@ const getAllEvents = () => {
   }).catch(error => Promise.reject(error));
 };
 
+/**
+ * Create a new event
+ * @param {Object} data - An object containing the e
+ */
 const addEvent = async (data) => {
   try {
     let sql = 'SELECT id FROM events where id = ?';
