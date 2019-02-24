@@ -54,7 +54,7 @@ const getByActor = (req, res) => {
 };
 
 
-var eraseEvents = () => {
+ eraseEvents = () => {
   
 };
 
