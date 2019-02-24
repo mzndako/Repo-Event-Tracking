@@ -8,7 +8,7 @@
      }
      if (!body[key]) {
        return expectedError[key];
-     }
+     };
    }
  };
  
