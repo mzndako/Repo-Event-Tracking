@@ -9,7 +9,7 @@ db.setupDatabase = () => {
 }
 
 /**
- * Query the 
+ * Query the da
  */
 db.find = async (query, whereBind=[])=>{
   console.log(query)
