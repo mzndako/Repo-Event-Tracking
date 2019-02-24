@@ -1,1 +1,1 @@
-const databas
+const database
