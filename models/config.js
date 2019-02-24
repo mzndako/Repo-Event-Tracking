@@ -21,7 +21,7 @@ db.find = (query, whereBind=[])=>{
     if(err){
       reject(err)
     }
-    return Promise.resolve(result)
+    resolve(result)
   })
   }) 
 }
