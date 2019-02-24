@@ -44,8 +44,8 @@ const addEvent = async (data) => {
       await database.insert(sql, bindParam);
     }
     
-    return Promise.resolve('Successfu')
-  }catch(error){
+    return Promise.resolve('Successful');
+  } catch (error) {
     return Promise.reject(error);
   }
   
