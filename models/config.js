@@ -15,7 +15,7 @@ db.setupDatabase = () => {
  */
 db.find = async (query, whereBind=[])=>{
   console.log(query)
-  return db.all(query, whereBind, (err, result) => {
+  db.all(query, whereBind, (err, result) => {
     console.log(result, err)
     if(err){
       return Promise.reject(err)
