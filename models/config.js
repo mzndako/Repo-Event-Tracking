@@ -18,20 +18,16 @@ const find = async (query, whereBind=[])=>{
     }
     return Promise.resolve(result)
   })
-} 
+}
 
 const insert = async (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
-  const x = statement.finalize(a=>console.log("aaa", a))
+  const x = await statement.finalize(a=>console.log("aaa", a))
   console.log("xxx," , x)
 }
 
  
 setupDatabase()
-
-insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
-
-find("select * from mzee")
 
 module.exports = db
