@@ -9,7 +9,8 @@
      if (!body[key]) {
        return expectedError[key];
      };
-   }
+   };
+   return true;
  };
  
  const processError = (error) => {
