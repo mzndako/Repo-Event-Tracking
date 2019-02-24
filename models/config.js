@@ -10,6 +10,7 @@ const setupDatabase = () => {
 }
 
 const find = (query, whereBind=[])=>{
+  console.log(query)
   return db.all(query, whereBind, (err, result) => {
     console.log(result, err)
     if(err){
