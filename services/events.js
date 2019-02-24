@@ -9,7 +9,7 @@ const getAllEvents = () => {
 };
 
 const addEvent = async (data) => {
-  try{
+  try {
     let sql = 'SELECT id FROM events where id = ?';
     let bindParam = [data.id];
     let results = database.find(sql, bindParam);
@@ -45,7 +45,7 @@ const addEvent = async (data) => {
     }
     
     return Promise.resolve('Successful');
-  } catch (error){
+  } catch (error) {
     return Promise.reject(error);
   }
   
