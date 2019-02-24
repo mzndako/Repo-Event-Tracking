@@ -39,6 +39,12 @@ const addEvent = (req, res) => {
   }).catch(error => res.status(400).send(processError(error)));
 };
 
+/**
+ * Get all events
+ * @param {Object} req - The Request Object
+ * @param {Object} res - The Response Object
+ * @return Response Resource
+ */
 const getByActor = (req, res) => {
   let actorId = req.params.actorId;
   if (!actorId) {
