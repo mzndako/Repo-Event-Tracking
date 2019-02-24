@@ -4,4 +4,4 @@ const getAllEvents = () => {
   
 }
 
-module.
+module.exports
