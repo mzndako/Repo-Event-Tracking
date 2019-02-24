@@ -65,7 +65,7 @@ const getByActor = (actorId) => {
  */
 const processEvent = (events) => {
   let processedResults = [];
-  for (let i = 0; i < .length; i++) {
+  for (let i = 0; i < events.length; i++) {
      let result = events[i];
      let value = {
        id: result.event_id,
