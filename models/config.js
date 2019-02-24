@@ -3,7 +3,7 @@ const db = new sqlite.Database('database/db.sqlite')
 
 const setupDatabase = () => {
   try{
-    db.run('CREATE TABLE IF NOT EXISTS mzEE(mz te, name text)')
+    db.run('CREATE TABLE IF NOT EXISTS mzEE(mz text, name text)')
   }catch(error){
     console.log(error)
   }
@@ -33,8 +33,8 @@ const insert = (query, values) => {
 
 setupDatabase()
 
-insert("INSERT INTO mz VALUES ( ?, ?)", [55, 'mzndako'])
+insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay', 'mzndako'])
 
-find("select * from mz",[], ['info = ?', 'Ipsum 1'])
+find("select * from mzee",[], ['info = ?', 'Ipsum 1'])
 
 module.exports = db
