@@ -15,7 +15,7 @@ db.setupDatabase = () => {
  */
 db.find = (query, whereBind=[])=>{
   console.log(query)
-  return new Promise() db.all(query, whereBind, (err, result) => {
+  return new Promise((resolv)) db.all(query, whereBind, (err, result) => {
     console.log(result, err)
     if(err){
       return Promise.reject(err)
