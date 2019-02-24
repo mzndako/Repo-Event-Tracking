@@ -30,7 +30,7 @@ const insert = (query, values) => {
 setupDatabase()
 
 var x = await insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
-console.log(x, "bbbbb")
+console.log()
 find("select * from mzee")
 
 module.exports = db
