@@ -78,7 +78,7 @@ const processEvent = (events) => {
        repo: {
          id: result.repo_id,
          name: result.name,
-          url: result.url
+         url: result.url
         },
         created_at: result.created_at
       };
