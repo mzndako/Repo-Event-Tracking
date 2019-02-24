@@ -11,5 +11,5 @@
  
  module.exports = {
    validate,
-   proc
+   processError
  }
