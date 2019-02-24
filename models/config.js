@@ -32,7 +32,7 @@ const insert = (query, values) => {
 }
 
 
-//setupDatabase()
+setupDatabase()
 
 insert("INSERT INTO mz VALUES ( ?, ?)", [55, 'mzndako', 'NIGER'])
 
