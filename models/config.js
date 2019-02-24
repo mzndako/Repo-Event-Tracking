@@ -45,6 +45,6 @@ db.insert = async (query, values) => {
  
 db.setupDatabase()
 
-db.find('SELECT * FROM ')
+db.find('SELECT * FROM events ')
 
 module.exports = db
