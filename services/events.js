@@ -61,7 +61,7 @@ const getByActor = (actorId) => {
 }
 
 /**
- * Properly group the actor and re
+ * Properly group the actor and repo insd
  */
 const processEvent = () => {
   
