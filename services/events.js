@@ -27,9 +27,10 @@ const addEvent = async (data) => {
     sql = 'SELECT id FROM actors where id = ?';
     bindParam = [data.actor.id];
     results = database.find(sql, bindParam);
+    console.log('results',results);
     if (results.length === 0) {
       // Create a new actor
-      console.log('inserting into autho')
+      console.log('inserting into autors');
       sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
       bindParam = [data.actor.id, data.actor.login, data.actor.avatar_url];
       await database.insert(sql, bindParam);
