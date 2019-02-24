@@ -47,6 +47,6 @@ setupDatabase()
 
 insert("INSERT INTO lorem VALUES (?)", ['mzee'])
 
-find("select * from ",[], ['info = ?', 'Ipsum 1'])
+find("select * from users",[], ['info = ?', 'Ipsum 1'])
 
 module.exports = db
