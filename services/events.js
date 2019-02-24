@@ -66,13 +66,13 @@ const getByActor = (actorId) => {
 }
 
 /**
- * Get Events by actorId
+ * 
  * @param {Integer} actorId - Actor Id
  */
 const eraseEvents = () => {
   let sql = 'DELETE FROM events';
   
-  return database.delete(sql).then( => {
+  return database.delete(sql).then(result => {
     return Promise.resolve(result);
   }).catch(error => Promise.reject(error));
 }
