@@ -40,7 +40,7 @@ const addEvent = (req, res) => {
 };
 
 
-var getByActor = () => {
+va getByActor = () => {
 
 };
 
