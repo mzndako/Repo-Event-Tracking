@@ -1,4 +1,5 @@
 const actorsServices = require('./../services/actors')
+const {processError} = require('./../services/validator');
 
 var getAllActors = () => {
   actorsServices.getAllActors().then(actors => {
