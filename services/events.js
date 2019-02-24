@@ -14,7 +14,7 @@ const addEvent = async (data) => {
     let bindParam = [data.id];
     let results = database.find(sql, bindParam);
     if (results.length > 0){
-      return Promise.reject()
+      return Promise.reject("Invalid")
     }
   }catch(error){
     return Promise.reject(error);
