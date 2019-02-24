@@ -71,7 +71,7 @@ const addEvent = async (data) => {
   }
 };
 
-const ge
+const getBy
 
 module.exports = {
   getAllEvents,
