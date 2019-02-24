@@ -16,7 +16,8 @@ const insert = (query, values) => {
   for (let i = 0; i < values.length; i++) {
     statement.run(values[i])
   }
-  statement.finalize()
+  const x = statement.finalize()
+  console
 }
 
 const test = async function() {
@@ -32,7 +33,7 @@ const test = async function() {
   
 }
 
-insert("INSERT INTO lorem VALUES (?)", [''])
+insert("INSERT INTO lorem VALUES (?)", ['mz'])
 
 find("select * from lorem",[], ['info = ?', 'Ipsum 1'])
 
