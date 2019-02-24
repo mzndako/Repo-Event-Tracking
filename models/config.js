@@ -24,7 +24,7 @@ const insert = (query, values) => {
   var statement = db.prepare(query);
   console.log(values)
   for (let i = 0; i < values.length; i++) {
-    statement.run(values[i])
+    statement.set(i+1, values[i])
   }
   const x = statement.finalize()
   console.log("answer", x)
