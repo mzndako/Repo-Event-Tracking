@@ -1,7 +1,7 @@
 /**
  * Valid request
  */
- const validate = (array) => {
+ const validate = (barray) => {
    for(let i = 0; i < array.length; i++){
      
    }
