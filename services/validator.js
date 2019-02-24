@@ -8,7 +8,7 @@
  const processError = (error) => {
    let sendError = {};
    if (typeof error === 'string') {
-     sendError.error = 
+     sendError.error = e
    };
  }
  
