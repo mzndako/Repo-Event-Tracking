@@ -41,7 +41,7 @@ const addEvent = (req, res) => {
 
 const getByActor = (req, res) => {
   let actorId = req.params.actorId;
-  
+  i
 };
 
 
