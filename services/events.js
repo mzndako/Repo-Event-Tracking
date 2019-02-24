@@ -24,7 +24,7 @@ const addEvent = async (data) => {
     
     // Insert into the actor TABLE
     sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
-    bindParam = []
+    bindParam = [d]
     
   }catch(error){
     return Promise.reject(error);
