@@ -72,7 +72,7 @@ const addEvent = async (data) => {
 };
 
 /**
- * Get Events by 
+ * Get Events by actor
  */
 const getByActor = (actorId) => {
   
