@@ -10,7 +10,7 @@ db.setupDatabase = () => {
 
 /**
  * Query the database
- * @param {String}  - SQL String
+ * @param {String} query - SQL String
  * @param {Array} - The array of bind value for the where statement
  * @return The query result as a promise
  */
