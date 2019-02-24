@@ -5,4 +5,4 @@
    
  }
  
- const processEr
+ const processError
