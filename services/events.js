@@ -68,8 +68,8 @@ const processEvent = (events) => {
   for(let i = 0; i < results.length; i++){
      let result = results[i];
      let value = {
-        id: result.event_id,
-        type: result.type,
+       id: result.event_id,
+       type: result.type,
         actor: {
           id: result.actor_id,
           login: result.login,
