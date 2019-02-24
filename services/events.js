@@ -79,7 +79,7 @@ const processEvent = (events) => {
          id: result.repo_id,
          name: result.name,
          url: result.url
-       },
+      },
         created_at: result.created_at
       };
       processedResults.push(value);
