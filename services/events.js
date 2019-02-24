@@ -85,7 +85,7 @@ const processEvent = (events) => {
     
     processedResults.push(value);
   }
-
+  return pro
 }
 
 module.exports = {
