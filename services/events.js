@@ -27,7 +27,6 @@ const addEvent = async (data) => {
     sql = 'SELECT id FROM actors where id = ?';
     bindParam = [data.actor.id];
     results = await database.find(sql, bindParam);
-    console.log('results',results);
     if (results.length === 0) {
       // Create a new actor
       sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
