@@ -62,7 +62,7 @@ db.delete = async (query) => {
 
  
 db.setupDatabase()
-db.find('SELECT  count(events.id) as mz from actors inner join events on actors.id = events.actor_id')
+db.find('SELECT a count(events.id) as mz from actors inner join events on actors.id = events.actor_id')
 //db.find('SELECT * FROM events ')
 //db.insert("UPDATE actors SET login = ? WHERE id=?", ['mz', 3213163])
 //db.find('SELECT * FROM actors where id = 3213163')
