@@ -4,6 +4,6 @@ const actorsController = require('./../controllers/actors')
 // Routes related to actor.
 router.get('/', actorsController.getAllActors);
 router.put('/', actorsController.updateActor);
-router.get('/', actorsController.getStreak);
+router.get('/s', actorsController.getStreak);
 
 module.exports = router;
