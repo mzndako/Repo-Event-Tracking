@@ -25,7 +25,7 @@ db.find = (query, whereBind=[])=>{
         return reject(err);
       };
       
-      resolve(result);
+      retresolve(result);
     })
   }) 
 }
