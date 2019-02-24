@@ -76,7 +76,6 @@ const processEvent = (events) => {
          avatar_url: result.avatar_url
        },
        repo: {
-  
          id: result.repo_id,
          name: result.name,
          url: result.url
