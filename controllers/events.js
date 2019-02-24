@@ -47,7 +47,7 @@ const getByActor = (req, res) => {
   
   eventsServices.getByActor(actorId).then(events => {
     if (events.length === 0) {
-      return res.status(404)
+      return res.status(404).send(processError)
     }
     res.status(200).send(events);
   }).catch(error => res.status(404).send(processError(error)))
