@@ -27,13 +27,13 @@ const insert = (query, values) => {
     statement.run(values[i])
   }
   const x = statement.finalize()
-  console.log("x)
+  console.log("answer", x)
 }
 
 
 setupDatabase()
 
-insert("INSERT INTO mz VALUES ( ?, ?)", [55, 'mzndako', 'NIGER'])
+insert("INSERT INTO mz VALUES ( ?, ?)", [55, 'mzndako'])
 
 find("select * from mz",[], ['info = ?', 'Ipsum 1'])
 
