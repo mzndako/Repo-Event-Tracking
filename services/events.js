@@ -64,26 +64,6 @@ const getByActor = (actorId) => {
  * Properly group the actor and repo inside the event
  */
 const processEvent = (events) => {
-  let processedResults = [];
-    for(let i = 0; i < results.length; i++){
-      let result = results[i];
-      let value = {
-        id: result.event_id,
-        type: result.type,
-        actor: {
-          id: result.actor_id,
-          login: result.login,
-          avatar_url: result.avatar_url
-        },
-        repo: {
-          id: result.repo_id,
-          name: result.name,
-          url: result.url
-        },
-        created_at: result.created_at
-      };
-      processedResults.push(value);
-    }
   
 }
 
