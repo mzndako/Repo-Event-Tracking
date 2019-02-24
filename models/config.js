@@ -1,8 +1,8 @@
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
-const find = (tableName, where)=>{
-  return db.all(sql, whereCommand, (err, result) => {
+const find = (tableName, whereBind)=>{
+  return db.all(sql, whereBind, (err, result) => {
     console.log(result, err)
     if(err){
       return Promise.reject(err)
