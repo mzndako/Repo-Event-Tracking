@@ -5,5 +5,5 @@ const getAllEvents = () => {
 }
 
 module.exports = {
-  
+  getAllEvents
 }
