@@ -8,7 +8,7 @@ const getAllEvents = () => {
     for(let i = 0; i < results.length; i++){
       let result = results[0];
       processedResults[] = {
-        id: 
+        id: resu
       }
     }
     return Promise.resolve(results);
