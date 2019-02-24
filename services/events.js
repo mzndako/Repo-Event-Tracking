@@ -4,26 +4,7 @@ const getAllEvents = () => {
   let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id';
   
   return database.find(sql).then(results => {
-    let processedResults = [];
-    for(let i = 0; i < results.length; i++){
-      let result = results[i];
-      let value = {
-        id: result.event_id,
-        type: result.type,
-        actor: {
-          id: result.actor_id,
-          login: result.login,
-          avatar_url: result.avatar_url
-        },
-        repo: {
-          id: result.repo_id,
-          name: result.name,
-          url: result.url
-        },
-        created_at: result.created_at
-      };
-      processedResults.push(value);
-    }
+    
     return Promise.resolve(processedResults);
   }).catch(error => Promise.reject(error));
 };
