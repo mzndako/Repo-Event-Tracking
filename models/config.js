@@ -32,7 +32,7 @@ const test = async function() {
   
 }
 
-insert("INSERT INTO lorem VALUES (?)")
+insert("INSERT INTO lorem VALUES (?)", [''])
 
 find("select * from lorem",[], ['info = ?', 'Ipsum 1'])
 
