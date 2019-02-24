@@ -56,7 +56,7 @@ db.update = async (query, values) => {
 /**
  * Delete entry in a table
  */
-db.delet
+db.delete = as
 
  
 db.setupDatabase()
