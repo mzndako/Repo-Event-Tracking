@@ -1,5 +1,6 @@
 /**
- *
+ * Ge
+ */
 const getAllEvents = () => {
     
 };
