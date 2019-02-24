@@ -37,7 +37,7 @@ const addEvent = async (data) => {
     sql = 'SELECT id FROM repos where id = ?';
     bindParam = [data.repo.id];
     results = database.find(sql, bindParam);
-    if (results.length === 0){
+    if (results.length === 0) {
       // Create a new repo
       sql = 'INSERT INTO repos (id, name, url) VALUES (?, ?, ?)';
       bindParam = [data.repo.id, data.repo.login, data.repo.avatar_url];
