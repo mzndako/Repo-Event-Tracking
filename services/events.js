@@ -81,7 +81,7 @@ const processEvent = (events) => {
          url: result.url
       },
         created_at: result.created_at
-      };
+    };
      processedResults.push(value);
   }
 }
