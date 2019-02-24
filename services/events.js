@@ -12,7 +12,7 @@ const getAllEvents = () => {
         type: result.type,
         actor: {
           id: result.actor_id,
-          url: resu
+          login: result.login
         }
       }
     }
