@@ -31,7 +31,7 @@ const insert = (query, values) => {
   console.log("answer", x)
 }
 
-
+ 
 setupDatabase()
 
 insert("INSERT INTO mzee VALUES ( ?, ?), (?, ?)", [['okay1', 'mzndako3'], ['test', 'cool']])
