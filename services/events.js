@@ -3,8 +3,8 @@ const database = require('./../models/config');
 const getAllEvents = () => {
   let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id';
   
-  return database.find(sql).then(results => {
-    let re
+  return database.find(sql).then(events => {
+    let 
     return Promise.resolve(processedResults);
   }).catch(error => Promise.reject(error));
 };
