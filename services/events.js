@@ -60,7 +60,7 @@ const getByActor = (actorId) => {
   let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id WHERE actor_id = ?';
   
   return database.find(sql, [actorId]).then(events => {
-    let results = processedEvents(events);
+    let results = processeEvents(events);
     return Promise.resolve(results);
   }).catch(error => Promise.reject(error));
 }
@@ -96,5 +96,5 @@ const processEvents = (events) => {
 module.exports = {
   getAllEvents,
   addEvent,
-  getBy
+  getByActor
 };
