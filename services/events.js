@@ -7,7 +7,7 @@ const getAllEvents = () => {
     let processedResults = [];
     for(let i = 0; i < results.length; i++){
       let result = results[0];
-      processedResults[] = {
+      {
         id: result.id,
         type: result.type,
         actor: {
