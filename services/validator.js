@@ -6,7 +6,7 @@
  }
  
  const processError = (error) => {
-   if(typeof )
+   if(typeof error ==)
  }
  
  module.exports = {
