@@ -9,7 +9,8 @@ const getAllEvents = () => {
       let result = results[0];
       processedResults[] = {
         id: result.id,
-        type: result
+        type: result.type,
+        a
       }
     }
     return Promise.resolve(results);
