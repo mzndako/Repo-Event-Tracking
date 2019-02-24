@@ -13,7 +13,7 @@ const addEvent = async (data) => {
     let sql = 'SELECT id FROM events where id = ?';
     let bindParam = [data.id];
     let results = database.find(sql, bindParam);
-    if (results.len)
+    if (results.length > )
   }catch(error){
     return Promise.reject(error);
   }
