@@ -43,7 +43,7 @@ const addEvent = (req, res) => {
  * Get events by actor
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
- * @return 
+ * @return null
  */
 const getByActor = (req, res) => {
   let actorId = req.params.actorId;
@@ -60,6 +60,12 @@ const getByActor = (req, res) => {
 };
 
 
+/**
+ * Get all events
+ * @param {Object} req - The Request Object
+ * @param {Object} res - The Response Object
+ * @return Response Resource
+ */
 const eraseEvents = () => {
   eventsServices.eraseEvents().then(result => {
     
