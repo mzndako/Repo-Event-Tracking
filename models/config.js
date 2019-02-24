@@ -17,7 +17,7 @@ db.find = (query, whereBind=[])=>{
   console.log(query)
   return new Promise((resolve, reject) => {
     db.all(query, whereBind, (err, result) => {
-      console.log(result, er);
+      console.log(result);
       if(err){
         reject(err);
       };
