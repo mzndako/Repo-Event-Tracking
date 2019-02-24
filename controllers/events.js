@@ -24,7 +24,7 @@ const addEvent = (req, res) => {
   
   let validated = validate(data, validationRule);
   if (validated !== true) {
-    return res.status
+    return res.status(4)
   }
 };
 
