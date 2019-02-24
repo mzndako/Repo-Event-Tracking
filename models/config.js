@@ -48,7 +48,7 @@ db.insert = async (query, values) => {
  * @param {Array} array - The binded values to be inserted into the database
  * @return A promise
  */
-db. = async (query, values) => {
+db.update = async (query, values) => {
   let statement = db.prepare(query);
   statement.run(values) // Bind the values
   return statement.finalize()
