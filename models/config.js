@@ -34,8 +34,8 @@ const insert = (query, values) => {
 
 //setupDatabase()
 
-insert("INSERT INTO users VALUES ( ?, ?)", [55, 'mzndako', 'NIGER'])
+insert("INSERT INTO users VALUES ( ?, ?, ?)", [55, 'mzndako', 'NIGER'])
 
-//find("select * from users",[], ['info = ?', 'Ipsum 1'])
+find("select * from users",[], ['info = ?', 'Ipsum 1'])
 
 module.exports = db
