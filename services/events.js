@@ -61,7 +61,7 @@ const getByActor = (actorId) => {
 }
 
 /**
- * Properly group the act
+ * Properly group the actor and re
  */
 const processEvent = () => {
   
