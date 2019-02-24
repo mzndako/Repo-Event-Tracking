@@ -82,11 +82,11 @@ const processEvent = (events) => {
         },
         created_at: result.created_at
       };
-    
+  
     processedResults.push(value);
   }
   return processedResults;
-}
+};
 
 module.exports = {
   getAllEvents,
