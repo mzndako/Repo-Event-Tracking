@@ -1,7 +1,7 @@
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
-const find = (, whereBind=[])=>{
+const find = (query, whereBind=[])=>{
   return db.all(sql, whereBind, (err, result) => {
     console.log(result, err)
     if(err){
@@ -11,7 +11,7 @@ const find = (, whereBind=[])=>{
   })
 }
 
-const insert = (query) => {
+const insert = (query, values) => {
   var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
   for (var i = 0; i < 10; i++) {
       stmt.run("Ipsum " + i);
