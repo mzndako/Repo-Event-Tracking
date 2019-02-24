@@ -12,6 +12,7 @@
    }else{
      sendError.error = error.error || error.message || 'An error has occurred';
    }
+
  }
  
  module.exports = {
