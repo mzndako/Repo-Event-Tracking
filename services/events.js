@@ -47,7 +47,7 @@ const addEvent = async (data) => {
     return Promise.resolve('Successful');
   } catch (error) {
     return Promise.reject(error);
-  }
+  };
 
 }
 
