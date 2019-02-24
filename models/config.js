@@ -31,20 +31,8 @@ const insert = (query, values) => {
   console.log(x)
 }
 
-const test = async function() {
-  //db.run("CREATE TABLE lorem (info TEXT)");
- 
-  //var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
-  //for (var i = 0; i < 10; i++) {
-  //    stmt.run("Ipsum " + i);
-  //}
-  //stmt.finalize();
- 
-  db.all("SELECT rowid AS id, info FROM lorem", (err, rows)=>console.log("one time", rows));
-  
-}
 
-setupDatabase()
+//setupDatabase()
 
 //insert("INSERT INTO users VALUES (?)", [[55, 'mzndako']])
 
