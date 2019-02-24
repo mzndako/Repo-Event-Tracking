@@ -15,7 +15,7 @@ const getAllEvents = (req, res) => {
 
 const addEvent = (req, res) => {
   let data = req.body;
-  let validat
+  let validateRule = {
   let validated = validate(data, ) 
 };
 
