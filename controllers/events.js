@@ -1,4 +1,4 @@
-
+const 
 /**
  * Get all events
  * @param {Object} req - The Request Object
