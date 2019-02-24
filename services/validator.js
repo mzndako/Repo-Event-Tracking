@@ -9,7 +9,7 @@
    let sendError = {};
    if (typeof error === 'string') {
      sendError.error = error;
-   }else{
+   } else {
      sendError.error = error.error || error.message || 'An error has occurred';
    };
    return sendError;
