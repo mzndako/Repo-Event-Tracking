@@ -40,6 +40,8 @@ const test = async function() {
   
 }
 
+setupDatabase()
+
 insert("INSERT INTO lorem VALUES (?)", ['mzee'])
 
 find("select * from lorem",[], ['info = ?', 'Ipsum 1'])
