@@ -1,4 +1,5 @@
-const actorsServices = require('./../services')
+const actorsServices = require('./../services/actors')
+
 var getAllActors = () => {
 	
 };
