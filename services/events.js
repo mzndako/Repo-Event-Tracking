@@ -53,6 +53,19 @@ const addEvent = async (data) => {
 };
 
 /**
+ * Get Events by actorId
+ * @param {Integer} actorId - Actor Id
+ */
+const getByActor = (actorId) => {
+  let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id WHERE actor_id = ? ORDER BY events.created_at ASC';
+  
+  return database.find(sql, [actorId]).then(events => {
+    let results = processEvents(events);
+    return Promise.resolve(results);
+  }).catch(error => Promise.reject(error));
+}
+
+/**
  * Properly group the actor and repo inside the event
  */
 const processEvents = (events) => {
