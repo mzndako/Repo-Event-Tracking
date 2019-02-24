@@ -19,7 +19,7 @@ const addEvent = (req, res) => {
     'id': 'Please provide a valid Id',
     'type': 'Please provide a type',
     'actor': 'Please provide actor',
-    'repos': 'Please provide a valid rep'
+    'repo': 'Please provide a valid repo detail'
   }
   let validated = validate(data, ) 
 };
