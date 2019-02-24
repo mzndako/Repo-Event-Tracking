@@ -1,5 +1,5 @@
 
- getAllEvents = () => {
+const getAllEvents = () => {
     
 };
 
