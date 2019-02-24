@@ -7,6 +7,7 @@ const getAllEvents = () => {
   }).catch(error => Promise.reject(error));
 };
 
+
 module.exports = {
   getAllEvents
 };
