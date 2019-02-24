@@ -40,7 +40,7 @@ const addEvent = (req, res) => {
 };
 
 /**
- * Get 
+ * Get events 
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return Response Resource
