@@ -10,10 +10,10 @@ const validate = (body, expectedError) => {
      return expectedError[key];
    };
  };
-   return true;
+ return true;
 };
 
- const processError = (error) => {
+const processError = (error) => {
    let sendError = {};
    if (typeof error === 'string') {
      sendError.error = error;
