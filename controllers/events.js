@@ -1,6 +1,6 @@
 /**
  * Get all events
- * @param {Object} req - The  Request Object
+ * @param {Object} req - The e Request Object
  * @param {Object} res - The Response Object
  */
 const getAllEvents = (req, res) => {
