@@ -57,7 +57,7 @@ const addEvent = async (data) => {
  * @param {Integer} actorId - Actor Id
  */
 const getByActor = (actorId) => {
-  let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id WHERE actor';
+  let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id WHERE ac';
 
   return database.find(sql).then(events => {
     let results = processedEvents(events);
