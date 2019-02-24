@@ -2,5 +2,5 @@ var express = require('express');
 var router = express.Router();
 const actorsController = require('./../controllers/actors')
 // Routes related to actor.
-router.get('/', actorsController.ge)
+router.get('/', actorsController.)
 module.exports = router;
