@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const eventsController = 
+const eventsController = r
 // Route related to delete events
 router.delete('/', )
 
