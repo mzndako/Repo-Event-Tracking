@@ -18,7 +18,7 @@ const find = async (query, whereBind=[])=>{
     }
     return Promise.resolve(result)
   })
-}
+} 
 
 const insert = async (query, values) => {
   var statement = db.prepare(query);
