@@ -5,7 +5,7 @@
    
  }
  
- const processError = () => {
+ const processError = (e) => {
    
  }
  
