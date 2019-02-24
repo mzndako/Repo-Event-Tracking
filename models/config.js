@@ -9,7 +9,7 @@ const setupDatabase = () => {
   }
 }
 
-const find = (query, whereBind=[])=>{
+const find = async (query, whereBind=[])=>{
   console.log(query)
   return db.all(query, whereBind, (err, result) => {
     console.log(result, err)
@@ -20,7 +20,7 @@ const find = (query, whereBind=[])=>{
   })
 }
 
-const insert = (query, values) => {
+const insert = async (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
   return statement.finalize(a=>console.log("aaa", a))
@@ -30,7 +30,7 @@ const insert = (query, values) => {
 setupDatabase()
 
 var x = await insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
-console.log()
+console.log(x, "bbbbb")
 find("select * from mzee")
 
 module.exports = db
