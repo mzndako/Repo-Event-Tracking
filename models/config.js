@@ -12,7 +12,7 @@ const find = (query, whereBind=[])=>{
 }
 
 const insert = (query, values) => {
-  var statement = db.prepare(query);
+  var statement = db.prepare();
   for (let i = 0; i < values.length; i++) {
     statement.run(values[i]);
   }
@@ -31,7 +31,6 @@ const test = async function() {
   db.all("SELECT rowid AS id, info FROM lorem", (err, rows)=>console.log("one time", rows));
   
 }
-
 
 find("lorem", ['info = ?', 'Ipsum 1'])
 
