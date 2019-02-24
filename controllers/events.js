@@ -1,5 +1,5 @@
 /**
- * Ge
+ * Get all e
  */
 const getAllEvents = () => {
     
