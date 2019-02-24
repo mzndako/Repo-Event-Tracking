@@ -13,7 +13,7 @@ const addEvent = async (data) => {
     let sql = 'SELECT id FROM events where id = ?';
     let bindParam = [data.id];
     let results = database.find(sql, bindParam);
-    if (results.length > 0){
+    if (results.length > 0) {
       return Promise.reject("Event already created");
     }
 
