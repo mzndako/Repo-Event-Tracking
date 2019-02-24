@@ -12,7 +12,7 @@
    }else{
      sendError.error = error.error || error.message || 'An error has occurred';
    }
-   retu
+   return send
  }
  
  module.exports = {
