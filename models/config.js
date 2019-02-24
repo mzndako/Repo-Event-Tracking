@@ -23,7 +23,7 @@ const find = (query, whereBind=[])=>{
 const insert = (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
-  return statement.finalize(a=>console.log())
+  return statement.finalize(a=>console.log("aa"))
 }
 
  
