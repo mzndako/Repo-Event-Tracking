@@ -71,7 +71,7 @@ const addEvent = async (data) => {
   }
 };
 
-const getByActor = (a) => {
+const getByActor = (actor) => {
   
 }
 
