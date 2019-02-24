@@ -7,7 +7,7 @@
        continue; // Dont process inherited properties
      }
      if (!body[key]) {
-       ret
+       
      }
    }
  };
