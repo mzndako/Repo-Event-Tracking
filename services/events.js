@@ -17,11 +17,12 @@ const addEvent = async (data) => {
       return Promise.reject("Event already created")
     }
     
-    // Insert into the events dat
+    // Insert into the events TABLE
     sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
     bindParam = [data.id, data.type, data.actor.id, data.repo.id, new Date()];
     await database.insert(sql, bindParam);
     
+    // Insert into the 
     
   }catch(error){
     return Promise.reject(error);
