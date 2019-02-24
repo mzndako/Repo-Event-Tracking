@@ -63,7 +63,7 @@ const getByActor = (actorId) => {
 /**
  * Properly group the actor and repo inside the event
  */
-const processEvent = (events) => {
+const processEvents = (events) => {
   let processedResults = [];
   for (let i = 0; i < events.length; i++) {
      let result = events[i];
