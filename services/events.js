@@ -71,7 +71,7 @@ const addEvent = async (data) => {
   }
 };
 
-const getByActor =
+const getByActor = ()
 
 module.exports = {
   getAllEvents,
