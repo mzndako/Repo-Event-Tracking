@@ -30,6 +30,28 @@ db.find = (query, whereBind=[])=>{
   }) 
 }
 
+/**
+ * Insert into the database
+ * @param {String} query - The insert query String
+ * @param {Array} array - The binded values to be inserted into the database
+ * @return A promise
+ */
+db.insert = async (query, values) => {
+  let statement = db.prepare(query);
+  statement.run(values) // Bind the values
+  return statement.finalize()
+}
+/**
+ * Insert into the database
+ * @param {String} query - The insert query String
+ * @param {Array} array - The binded values to be inserted into the database
+ * @return A promise
+ */
+db.insert = async (query, values) => {
+  let statement = db.prepare(query);
+  statement.run(values) // Bind the values
+  return statement.finalize()
+}
 
  
 db.setupDatabase()
