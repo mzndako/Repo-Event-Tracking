@@ -69,7 +69,7 @@ const getByActor = (actorId) => {
  * Get Events by actorId
  * @param {Integer} actorId - Actor Id
  */
-const eraseE = (actorId) => {
+const eraseEvents = () => {
   let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id WHERE actor_id = ? ORDER BY events.created_at ASC';
   
   return database.find(sql, [actorId]).then(events => {
