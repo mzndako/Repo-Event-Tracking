@@ -17,7 +17,8 @@ const addEvent = (req, res) => {
   let data = req.body;
   let validateRule = {
     'id': 'Please provide a valid Id',
-    
+    'type': 'Please provide a type',
+    'actor': 'Please provide autho'
   }
   let validated = validate(data, ) 
 };
