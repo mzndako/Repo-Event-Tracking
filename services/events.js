@@ -16,7 +16,8 @@ const getAllEvents = () => {
           avatar_url: result.avatar_url
         },
         repo: {
-          id: result.repo_id
+          id: result.repo_id,
+          name: result.a
         }
       }
     }
