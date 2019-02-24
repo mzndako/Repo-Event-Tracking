@@ -30,7 +30,6 @@ const addEvent = async (data) => {
     console.log('results',results);
     if (results.length === 0) {
       // Create a new actor
-      console.log('inserting into autors');
       sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
       bindParam = [data.actor.id, data.actor.login, data.actor.avatar_url];
       await database.insert(sql, bindParam);
