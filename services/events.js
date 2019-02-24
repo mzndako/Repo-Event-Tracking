@@ -5,7 +5,7 @@ const getAllEvents = () => {
   
   return database.find(sql).then(results => {
     let processedResults = [];
-    f
+    for(let i )
     return Promise.resolve(results);
   }).catch(error => Promise.reject(error));
 };
