@@ -2,7 +2,6 @@ const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
 const setupDatabase = () => {
-  try{
     db.run('CREATE TABLE IF NOT EXISTS mzEE(mz text, name text)')
 
 }
