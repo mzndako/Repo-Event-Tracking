@@ -31,8 +31,8 @@ const addEvent = async (data) => {
       sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
       bindParam = [data.actor.id, data.actor.login, data.actor.avatar_url];
       await database.insert(sql, bindParam);
-    }
-    
+    };
+
     // Search whether the repo exist in the repos TABLE
     sql = 'SELECT id FROM repos where id = ?';
     bindParam = [data.repo.id];
@@ -43,7 +43,7 @@ const addEvent = async (data) => {
       bindParam = [data.repo.id, data.repo.login, data.repo.avatar_url];
       await database.insert(sql, bindParam);
     }
-    
+  
     return Promise.resolve('Successful');
   } catch (error) {
     return Promise.reject(error);
