@@ -66,7 +66,7 @@ const getByActor = (actorId) => {
 }
 
 /**
- * 
+ * Delete
  * @param {Integer} actorId - Actor Id
  */
 const eraseEvents = () => {
