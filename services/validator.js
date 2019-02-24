@@ -1,9 +1,9 @@
 /**
  * Valid request
  */
- const validate = (body, expectedError) => {
-   for (let key in expectedError) {
-     if (!expectedError.hasOwnProperty(key)) {
+const validate = (body, expectedError) => {
+ for (let key in expectedError) {
+   if (!expectedError.hasOwnProperty(key)) {
        continue; // Dont process inherited properties
      };
      if (!body[key]) {
@@ -11,8 +11,8 @@
      };
    };
    return true;
- };
- 
+};
+
  const processError = (error) => {
    let sendError = {};
    if (typeof error === 'string') {
