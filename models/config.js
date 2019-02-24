@@ -27,6 +27,6 @@ const insert = async (query, values) => {
  
 setupDatabase()
 
-insert("insert into events (id) VALUES (?)", [4434])
+insert("insert into events (id) VALUES (?)", [44343434])
 
 module.exports = db
