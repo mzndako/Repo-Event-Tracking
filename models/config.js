@@ -31,7 +31,7 @@ db.find = (query, whereBind=[])=>{
 }
 
 /**
- * Insert into 
+ * Insert into a table
  * @param {String} query - The insert query String
  * @param {Array} array - The binded values to be inserted into the database
  * @return A promise
