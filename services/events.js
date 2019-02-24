@@ -17,7 +17,8 @@ const getAllEvents = () => {
         },
         repo: {
           id: result.repo_id,
-          name: result.a
+          name: result.name,
+          
         }
       }
     }
