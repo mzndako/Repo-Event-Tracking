@@ -26,7 +26,7 @@ const addEvent = async (data) => {
     // Search whether the actor exist in the actors TABLE
     sql = 'SELECT id FROM actors where id = ?';
     bindParam = [data.actor.id];
-    results = database.find(sql, bindParam);
+    results = await database.find(sql, bindParam);
     console.log('results',results);
     if (results.length === 0) {
       // Create a new actor
@@ -39,7 +39,7 @@ const addEvent = async (data) => {
     // Search whether the repo exist in the repos TABLE
     sql = 'SELECT id FROM repos where id = ?';
     bindParam = [data.repo.id];
-    results = database.find(sql, bindParam);
+    results = adatabase.find(sql, bindParam);
     if (results.length === 0) {
       // Create a new repo
       sql = 'INSERT INTO repos (id, name, url) VALUES (?, ?, ?)';
