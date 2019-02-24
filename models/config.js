@@ -33,7 +33,7 @@ db.find = (query, whereBind=[])=>{
 /**
  * Insert into a table
  * @param {String} query - The insert query String
- * @param {Array} array - The binded values to be inserted into the database
+ * @param {Array} array - The binded values to be inserted into the 
  * @return A promise
  */
 db.insert = async (query, values) => {
