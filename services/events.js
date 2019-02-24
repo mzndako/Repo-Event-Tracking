@@ -10,7 +10,9 @@ const getAllEvents = () => {
       processedResults[] = {
         id: result.id,
         type: result.type,
-        a
+        actor: {
+          id: resu
+        }
       }
     }
     return Promise.resolve(results);
