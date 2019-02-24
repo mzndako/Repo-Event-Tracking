@@ -33,7 +33,7 @@ db.find = async (query, whereBind=[])=>{
  */
 db.insert = async (query, values) => {
   let statement = db.prepare(query);
-  statement.run(values)
+  statement.run(values) 
   return statement.finalize()
 }
 
