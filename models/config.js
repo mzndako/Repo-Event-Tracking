@@ -19,7 +19,7 @@ db.find = (query, whereBind=[])=>{
     db.all(query, whereBind, (err, result) => {
       console.log(result, err);
       if(err){
-        reject(err)
+        reject(err);
       }
         resolve(result)
     })
