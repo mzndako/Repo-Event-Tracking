@@ -3,6 +3,7 @@ const db = new sqlite.Database('database/db.sqlite')
 
 const setupDatabase = () => {
   db.run('CREATE TABLE users(ID integer NOT NULL PRIMARY KEY, name text, city text)')
+  
 }
 
 const find = (query, whereBind=[])=>{
