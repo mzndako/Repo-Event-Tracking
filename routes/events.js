@@ -4,6 +4,6 @@ const eventController = require('./../controllers/events');
 // Routes related to event
 
 router.get('/', eventController.getAllEvents);
-router.post('/', eventController.getAllEvent);
+router.post('/', eventController.);
 
 module.exports = router;
