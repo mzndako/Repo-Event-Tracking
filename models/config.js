@@ -29,7 +29,7 @@ const insert = (query, values) => {
  
 setupDatabase()
 
-insert("INSERT INTO mzee VALUES ( ?, ?), (?, ?)", [['okay1', 'mzndako3'])
+insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
 
 find("select * from mzee",[], ['info = ?', 'Ipsum 1'])
 
