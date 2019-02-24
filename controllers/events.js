@@ -61,7 +61,7 @@ const getByActor = (req, res) => {
 
 
 /**
- * Delete/Erase all eve
+ * Delete/Erase all events
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return Response Resource
