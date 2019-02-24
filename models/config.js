@@ -10,7 +10,7 @@ db.setupDatabase = () => {
 
 /**
  * Query the database
- * @param {query} - SQL String
+ * @param {St} - SQL String
  * @param {
  */
 db.find = async (query, whereBind=[])=>{
