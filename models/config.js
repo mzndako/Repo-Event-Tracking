@@ -1,7 +1,9 @@
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
-c
+const setupDatabase = () => {
+  
+}
 
 const find = (query, whereBind=[])=>{
   return db.all(query, whereBind, (err, result) => {
