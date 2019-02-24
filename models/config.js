@@ -11,6 +11,7 @@ const find = (tableName, whereBind=[])=>{
   })
 }
 
+const 
 
 const test = async function() {
   //db.run("CREATE TABLE lorem (info TEXT)");
