@@ -7,7 +7,7 @@ const eventsServices = require('./../services/events');
  * @return null
  */
 const getAllEvents = (req, res) => {
-  e
+  eventsServices
 };
 
 var addEvent = () => {
