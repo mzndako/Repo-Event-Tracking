@@ -43,7 +43,7 @@ db.insert = async (query, values) => {
 }
 
 /**
- * Update entry the 
+ * Update entry in 
  * @param {String} query - The insert query String
  * @param {Array} array - The binded values to be inserted into the database
  * @return A promise
