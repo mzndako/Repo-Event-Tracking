@@ -8,8 +8,8 @@ const validate = (body, expectedError) => {
    };
    if (!body[key]) {
      return expectedError[key];
-     };
    };
+ };
    return true;
 };
 
