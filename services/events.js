@@ -14,7 +14,7 @@ const getAllEvents = () => {
 
 /**
  * Create a new event
- * @pr
+ * @param {Ob
  */
 const addEvent = async (data) => {
   try {
