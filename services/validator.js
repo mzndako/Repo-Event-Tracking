@@ -3,7 +3,7 @@
  */
  const validate = (body, array) => {
    for(let i = 0; i < body.length; i++){
-     if (body)
+     if (obj)
    }
  };
  
