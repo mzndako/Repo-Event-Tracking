@@ -1,7 +1,7 @@
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
-const find = (tableName, whereCommand, options)=>{
+const find = (tableName, whereCommand)=>{
   let whereBind = []
   let sql = `SELECT * FROM ${tableName}`
   if(whereCommand && whereCommand[0]){
