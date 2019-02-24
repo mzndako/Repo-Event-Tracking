@@ -3,6 +3,7 @@ const db = new sqlite.Database('database/db.sqlite')
 
 const setupDatabase = () => {
     db.run('CREATE TABLE IF NOT EXISTS events(id INTEGER, type VARCHAR(30), author_id INTEGER, repo_id INTEGER, created_at DATETIME, PRIMARY KEY(id))')
+    db.run('CREATE TABLE IF NOT EXISTS events(id INTEGER, type VARCHAR(30), author_id INTEGER, repo_id INTEGER, created_at DATETIME, PRIMARY KEY(id))')
 
 }
 
@@ -28,6 +29,6 @@ const insert = async (query, values) => {
 setupDatabase()
 
 //insert("insert into events (id) VALUES (?)", [44343434])
-/find("select * from events")
+find("select * from events")
 
 module.exports = db
