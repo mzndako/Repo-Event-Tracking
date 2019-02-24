@@ -13,8 +13,8 @@ const find = (query, whereBind=[])=>{
 
 const insert = (query, values) => {
   var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
-  for (var i = 0; i < 10; i++) {
-      stmt.run("Ipsum " + i);
+  for (var i = 0; i < values.length; i++) {
+      stmt.run();
   }
   stmt.finalize();
 }
