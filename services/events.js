@@ -60,7 +60,12 @@ const getByActor = (actorId) => {
   
 }
 
-const processEvent 
+/**
+ * 
+ */
+const processEvent = () => {
+  
+}
 
 module.exports = {
   getAllEvents,
