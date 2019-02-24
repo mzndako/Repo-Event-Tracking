@@ -10,7 +10,7 @@
    if (typeof error === 'string') {
      sendError.error = error;
    }else{
-     sendError.error = error.error || 
+     sendError.error = error.error || error.
    }
  }
  
