@@ -33,7 +33,6 @@ const test = async function() {
 }
 
 
-
 find("select * from lorem", ['info = ?', 'Ipsum 1'])
 
 module.exports = db
