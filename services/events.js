@@ -72,7 +72,7 @@ const addEvent = async (data) => {
 };
 
 /**
- * G
+ * Get Ev
  */
 const getByActor = (actorId) => {
   
