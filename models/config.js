@@ -32,6 +32,7 @@ const test = async function() {
   
 }
 
+insert("")
 
 find("select * from lorem",[], ['info = ?', 'Ipsum 1'])
 
