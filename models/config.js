@@ -32,7 +32,7 @@ db.find = async (query, whereBind=[])=>{
  * @return A promise
  */
 db.insert = async (query, values) => {
-  va statement = db.prepare(query);
+  let statement = db.prepare(query);
   statement.run(values)
   return statement.finalize()
 }
