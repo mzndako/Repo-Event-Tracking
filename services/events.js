@@ -70,7 +70,7 @@ const getByActor = (actorId) => {
  * @param {Integer} actorId - Actor Id
  */
 const eraseEvents = () => {
-  let sql = 'DELETE FROM ';
+  let sql = 'DELETE FROM e';
   
   return database.find(sql, [actorId]).then(events => {
     let results = processEvents(events);
