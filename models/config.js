@@ -22,15 +22,14 @@ const find = (query, whereBind=[])=>{
 
 const insert = (query, values) => {
   var statement = db.prepare(query);
-//  statement.run(values)
-  const x = statement.finalize()
-  console.log("answer", x)
+  statement.run(values)
+  return statement.finalize()
 }
 
  
 setupDatabase()
 
-insert("INSERT INTO mzee VALUES ( ?, ?), (?, ?)", [['okay1', 'mzndako3'], ['test', 'cool']])
+insert("INSERT INTO mzee VALUES ( ?, ?), (?, ?)", [['okay1', 'mzndako3'])
 
 find("select * from mzee",[], ['info = ?', 'Ipsum 1'])
 
