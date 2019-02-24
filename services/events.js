@@ -19,7 +19,8 @@ const getAllEvents = () => {
           id: result.repo_id,
           name: result.name,
           url: result.url
-        }
+        },
+        
       }
     }
     return Promise.resolve(results);
