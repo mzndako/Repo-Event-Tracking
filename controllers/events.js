@@ -27,6 +27,7 @@ const addEvent = (req, res) => {
     return res.status(404).send(processError(validated));
   }
   
+  eventsServices.
 };
 
 
