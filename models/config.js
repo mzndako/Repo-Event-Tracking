@@ -9,7 +9,7 @@ const find = (tableName, whereCommand)=>{
     whereBind = whereCommand.slice(1)
   }
   
-  return db.all(sql, whereBind, (err, result) => {
+  return db.all(sql, , (err, result) => {
     console.log(result, err)
     if(err){
       return Promise.reject(err)
