@@ -6,7 +6,7 @@
  }
  
  const processError = (error) => {
-   let 
+   let s
    if(typeof error === 'string')
  }
  
