@@ -17,7 +17,7 @@ db.setupDatabase = () => {
  * @return The query result as a promise
  */
 db.find = (query, whereBind=[])=>{
-  console.log(query)
+
   return new Promise((resolve, reject) => {
     db.all(query, whereBind, (err, result) => {
       console.log(result);
@@ -45,7 +45,7 @@ db.insert = async (query, values) => {
 /**
  * Update entry in a table
  * @param {String} query - The insert query String
- * @param {Array} array - The binded values to be inserted into the tab
+ * @param {Array} array - The binded values to be inserted into the table
  * @return A promise
  */
 db.update = async (query, values) => {
