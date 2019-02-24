@@ -23,13 +23,13 @@ const find = (query, whereBind=[])=>{
 const insert = (query, values) => {
   var statement = db.prepare(query);
   statement.run(values)
-  return statement.finalize()
+  return statement.finalize(a=>console.log())
 }
 
  
 setupDatabase()
 
-var x =insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
+var x = await insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
 
 find("select * from mzee")
 
