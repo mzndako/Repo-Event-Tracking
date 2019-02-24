@@ -37,6 +37,6 @@ db.insert = async (query, values) => {
 }
 
  
-dsetupDatabase()
+db.setupDatabase()
 
 module.exports = db

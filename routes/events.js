@@ -3,5 +3,5 @@ var router = express.Router();
 const eventController = require('./../controllers/events')
 // Routes related to event
 
-router.get("/events", eventController.getAllEvents)
+router.get("/events=", eventController.getAllEvents)
 module.exports = router;
