@@ -14,9 +14,9 @@ const validate = (body, expectedError) => {
 };
 
 const processError = (error) => {
-   let sendError = {};
-   if (typeof error === 'string') {
-     sendError.error = error;
+ let sendError = {};
+ if (typeof error === 'string') {
+   sendError.error = error;
    } else {
      sendError.error = error.error || error.message || 'An error has occurred';
    };
