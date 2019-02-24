@@ -61,7 +61,7 @@ const getByActor = (actorId) => {
 }
 
 /**
- * 
+ * Properly 
  */
 const processEvent = () => {
   
