@@ -10,7 +10,7 @@ const getAllEvents = () => {
 
 const addEvent = async (data) => {
   let sql = 'SELECT id FROM events where id = ?';
-  let bind
+  let bindParam = 
   sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
   let bindParam = [data.id]
   await database.insert
