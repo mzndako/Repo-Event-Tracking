@@ -1,1 +1,1 @@
-const database = require('con')
+const database = require('.//')
