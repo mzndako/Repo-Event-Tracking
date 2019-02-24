@@ -28,7 +28,7 @@ const insert = async (query, values) => {
 }
 
  
-setupDatabase()
+setupDatabase() 
 
 insert("INSERT INTO mzee VALUES ( ?, ?)", ['okay1', 'mzndako3'])
 
