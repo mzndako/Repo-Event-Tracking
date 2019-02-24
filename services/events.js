@@ -61,7 +61,7 @@ const getByActor = (actorId) => {
 }
 
 /**
- * Convert the return events object to the re
+ * 
  */
 const processEvent = () => {
   
