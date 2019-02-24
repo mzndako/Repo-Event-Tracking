@@ -24,8 +24,10 @@ const addEvent = (req, res) => {
   
   let validated = validate(data, validationRule);
   if (validated !== true) {
-    return res.status(404).send(processError(v))
+    return res.status(404).send(processError(validated));
   }
+  
+  eventsServices.addEvent(data).then
 };
 
 
