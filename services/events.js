@@ -20,10 +20,10 @@ const getAllEvents = () => {
           name: result.name,
           url: result.url
         },
-        created_at
+        created_at: result.created_at
       }
     }
-    return Promise.resolve(results);
+    return Promise.resolve(processedResults);
   }).catch(error => Promise.reject(error));
 };
 
