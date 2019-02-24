@@ -3,7 +3,7 @@
  */
  const validate = (body, expectedError) => {
    for(let key in expectedError){
-     if (Object.hasOwnProperty(key)) {
+     if (expectedError.hasOwnProperty(key)) {
        
      }
      let key = body[i];
