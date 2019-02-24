@@ -28,7 +28,7 @@ const addEvent = (req, res) => {
   }
   
   eventsServices.addEvent(data).then(result => {
-    return res.status(201).send({message: 'Successful'})
+    return res.status(201).send({message: 'Successful'});
   }).catch(error => res.status(400).send(processError(error)));
 };
 
