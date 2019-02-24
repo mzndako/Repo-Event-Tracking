@@ -2,7 +2,7 @@ const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
 const setupDatabase = () => {
-    db.run('CREATE TABLE IF NOT EXISTS events(id INTEGER, type VARCHAR(30), author_id)')
+    db.run('CREATE TABLE IF NOT EXISTS events(id INTEGER, type VARCHAR(30), author_id INTE)')
 
 }
 
