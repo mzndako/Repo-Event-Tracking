@@ -1,7 +1,7 @@
 /**
  * Get all events
  * @param {Object} req - The request Object
- * @param 
+ * @param {Obje}
  */
 const getAllEvents = (req, res) => {
     
