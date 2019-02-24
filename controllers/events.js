@@ -16,7 +16,7 @@ const getAllEvents = (req, res) => {
 const addEvent = (req, res) => {
   let data = req.body;
   let validateRule = {
-    'id': 'Please provide a'
+    'id': 'Please provide a valid I'
   }
   let validated = validate(data, ) 
 };
