@@ -33,7 +33,7 @@ const addEvent = (req, res) => {
   if (validated !== true) {
     return res.status(404).send(processError(validated));
   };
-  
+
   eventsServices.addEvent(data).then(result => {
     return res.status(201).send({message: 'Successful'});
   }).catch(error => res.status(400).send(processError(error)));
