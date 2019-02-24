@@ -1,6 +1,6 @@
 /**
  * Get all events
- * @param {Object} req - The express Request Object
+ * @param {Object} req - Thxpress Request Object
  * @param {Object} res - The Response Object
  */
 const getAllEvents = (req, res) => {
