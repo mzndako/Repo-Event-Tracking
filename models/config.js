@@ -34,7 +34,7 @@ const insert = (query, values) => {
 
 //setupDatabase()
 
-insert("INSERT INTO users VALUES ( ?, ?)", [55, 'mzndako', 'NIGER'])
+insert("INSERT INTO user VALUES ( ?, ?)", [55, 'mzndako', 'NIGER'])
 
 find("select * from mz",[], ['info = ?', 'Ipsum 1'])
 
