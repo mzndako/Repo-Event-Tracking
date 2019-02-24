@@ -1,4 +1,4 @@
-const eventsServices = requi
+const eventsServices = require()
 /**
  * Get all events
  * @param {Object} req - The Request Object
