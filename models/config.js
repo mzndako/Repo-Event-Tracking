@@ -62,7 +62,7 @@ db.delete = async (query) => {
 
  
 db.setupDatabase()
-db.find('SELECT count(eve from actors inner join event')
+db.find('SELECT count(events.id) as  from actors inner join event')
 //db.find('SELECT * FROM events ')
 //db.insert("UPDATE actors SET login = ? WHERE id=?", ['mz', 3213163])
 //db.find('SELECT * FROM actors where id = 3213163')
