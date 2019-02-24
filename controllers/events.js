@@ -23,7 +23,7 @@ const addEvent = (req, res) => {
   };
   
   let validated = validate(data, validationRule);
-  if(validated !)
+  if(validated !== tr)
 };
 
 
