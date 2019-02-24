@@ -71,7 +71,7 @@ const addEvent = async (data) => {
   }
 };
 
-const getByAcotr
+const getByAc
 
 module.exports = {
   getAllEvents,
