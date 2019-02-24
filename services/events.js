@@ -8,7 +8,7 @@ const getAllEvents = () => {
     for(let i = 0; i < results.length; i++){
       let result = results[i];
       let value = {
-        id: result.,
+        id: result.event,
         type: result.type,
         actor: {
           id: result.actor_id,
