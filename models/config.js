@@ -34,6 +34,6 @@ const test = async function() {
 
 
 
-find("lorem", ['info = ?', 'Ipsum 1'])
+find("select * from lorem", ['info = ?', 'Ipsum 1'])
 
 module.exports = db
