@@ -47,7 +47,7 @@ db.setupDatabase()
 
 //db.find('SELECT * FROM events ')
 db.update("UPDATE actors SET login = ? WHERE id=?", ['mz', 3213163])
-db.find('SELECT * FROM actors ')
+db.find('SELECT * FROM actors wer')
 //db.find('SELECT * FROM repos ')
 
 module.exports = db
