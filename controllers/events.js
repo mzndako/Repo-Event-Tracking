@@ -8,7 +8,7 @@ const eventsServices = require('./../services/events');
  */
 const getAllEvents = (req, res) => {
   eventsServices.getAllEvents().then(results => {
-    res.status()
+    res.status(2)
   })
 };
 
