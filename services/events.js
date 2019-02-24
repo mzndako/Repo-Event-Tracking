@@ -22,7 +22,7 @@ const addEvent = async (data) => {
     bindParam = [data.id, data.type, data.actor.id, data.repo.id, new Date()];
     await database.insert(sql, bindParam);
     
-    // Search whether the user exist in the actor TABLE
+    // Search whether the actor exist in the actor TABLE
     sql = 'SELECT id FROM actors where id = ?';
     bindParam = [data.actor.id];
     results = database.find(sql, bindParam);
@@ -33,7 +33,7 @@ const addEvent = async (data) => {
       await database.insert(sql, bindParam);
     }
     
-    // Search whether the user exist in the actor TABLE
+    // Search whether the r exist in the actor TABLE
     sql = 'SELECT id FROM actors where id = ?';
     bindParam = [data.actor.id];
     results = database.find(sql, bindParam);
