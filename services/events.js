@@ -12,7 +12,7 @@ const addEvent = async (data) => {
   try{
     let sql = 'SELECT id FROM events where id = ?';
     let bindParam = [data.id];
-    d
+    
   }catch(error){
     return Promise.reject(error);
   }
