@@ -45,7 +45,7 @@ const test = async function() {
 
 setupDatabase()
 
-insert("INSERT INTO  VALUES (?)", ['mzee'])
+insert("INSERT INTO u VALUES (?)", ['mzee'])
 
 find("select * from users",[], ['info = ?', 'Ipsum 1'])
 
