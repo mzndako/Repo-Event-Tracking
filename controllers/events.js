@@ -44,6 +44,8 @@ const getByActor = (req, res) => {
   if (!actorId) {
     return res.status(400).send(processError('Invalid Actor Id'));
   }
+  
+  
 };
 
 
