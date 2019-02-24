@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const eventController = require('./../event ')
+const eventController = require('./../cevent ')
 // Routes related to event
 
 router.get("/events", )
