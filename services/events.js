@@ -72,7 +72,7 @@ const getByActor = (actorId) => {
 const eraseEvents = () => {
   let sql = 'DELETE FROM events';
   
-  return database.(sql, [actorId]).then(events => {
+  return database.delete(sql, [actorId]).then(events => {
     let results = processEvents(events);
     return Promise.resolve(results);
   }).catch(error => Promise.reject(error));
