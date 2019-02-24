@@ -71,9 +71,9 @@ const processEvent = (events) => {
        id: result.event_id,
        type: result.type,
        actor: {
-          id: result.actor_id,
-          login: result.login,
-          avatar_url: result.avatar_url
+         id: result.actor_id,
+         login: result.login,
+         avatar_url: result.avatar_url
         },
         repo: {
           id: result.repo_id,
