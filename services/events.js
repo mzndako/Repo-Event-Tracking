@@ -61,9 +61,9 @@ const getByActor = (actorId) => {
 }
 
 /**
- * Properly group the actor and repo inside the even
+ * Properly group the actor and repo inside the event
  */
-const processEvent = () => {
+const processEvent = (events) => {
   
 }
 
