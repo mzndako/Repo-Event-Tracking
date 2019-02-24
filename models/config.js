@@ -2,7 +2,7 @@ const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('database/db.sqlite')
 
 const find = (query, whereBind=[])=>{
-  return db.all(sql, whereBind, (err, result) => {
+  return db.all(query, whereBind, (err, result) => {
     console.log(result, err)
     if(err){
       return Promise.reject(err)
@@ -14,9 +14,9 @@ const find = (query, whereBind=[])=>{
 const insert = (query, values) => {
   var statement = db.prepare(query);
   for (let i = 0; i < values.length; i++) {
-    statement.run(values[i]);
+    statement.run(values[i])
   }
-  statement.finalize();
+  statement.finalize()
 }
 
 const test = async function() {
