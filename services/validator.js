@@ -9,4 +9,4 @@
    
  }
  
- modu
+ module.exports
