@@ -1,4 +1,4 @@
-const actor
+const actorsServices = require('./../')
 var getAllActors = () => {
 	
 };
