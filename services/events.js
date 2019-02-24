@@ -11,7 +11,7 @@ const getAllEvents = () => {
         id: result.id,
         type: result.type,
         actor: {
-          id: resu
+          id: result.
         }
       }
     }
