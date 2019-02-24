@@ -24,11 +24,10 @@ const insert = (query, values) => {
   var statement = db.prepare(query);
   console.log(values)
   for (let i = 0; i < values.length; i++) {
-    console.log(values[i])
     statement.run(values[i])
   }
   const x = statement.finalize()
-  console.log(x)
+  console.log("x)
 }
 
 
