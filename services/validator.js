@@ -2,7 +2,8 @@
  * Valid request
  */
  const validate = (body, expectedError) => {
-   for(let i = 0; i < body.length; i++){
+   for(let key in expectedError){
+     Ob
      let key = body[i];
      if (expectedError[key] && body) {
        
