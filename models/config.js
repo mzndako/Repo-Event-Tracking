@@ -26,7 +26,7 @@ const insert = (query, values) => {
   for (let i = 0; i < values.length; i++) {
     statement.run(values[i])
   }
-  statement.run(values)
+//  statement.run(values)
   const x = statement.finalize()
   console.log("answer", x)
 }
@@ -34,7 +34,7 @@ const insert = (query, values) => {
 
 setupDatabase()
 
-insert("INSERT INTO mzee VALUES ( ?, ?), (?, ?)", [['okay', 'mzndako'], ['test', 'cool']])
+insert("INSERT INTO mzee VALUES ( ?, ?), (?, ?)", [['okay1', 'mzndako3'], ['test', 'cool']])
 
 find("select * from mzee",[], ['info = ?', 'Ipsum 1'])
 
