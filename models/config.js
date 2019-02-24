@@ -29,6 +29,5 @@ const insert = async (query, values) => {
  
 setupDatabase()
 
-//inse
 
 module.exports = db
