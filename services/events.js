@@ -7,7 +7,7 @@ const getAllEvents = () => {
     let processedResults = [];
     for(let i = 0; i < results.length; i++){
       let result = results[0];
-      {
+      let value = {
         id: result.id,
         type: result.type,
         actor: {
@@ -21,7 +21,8 @@ const getAllEvents = () => {
           url: result.url
         },
         created_at: result.created_at
-      }
+      };
+      
     }
     return Promise.resolve(processedResults);
   }).catch(error => Promise.reject(error));
