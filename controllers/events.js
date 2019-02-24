@@ -28,10 +28,11 @@ const addEvent = (req, res) => {
     'repo': 'Please provide a valid repo detail'
   };
   
+  // Make sure the needed are sent to the server
   let validated = validate(data, validationRule);
   if (validated !== true) {
     return res.status(404).send(processError(validated));
-  }
+  };
   
   eventsServices.addEvent(data).then(result => {
     return res.status(201).send({message: 'Successful'});
