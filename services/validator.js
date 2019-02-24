@@ -1,9 +1,9 @@
 /**
  * Valid request
  */
- const validate = (barray) => {
+ const validate = (body, array) => {
    for(let i = 0; i < array.length; i++){
-     
+    
    }
  };
  
