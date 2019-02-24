@@ -8,7 +8,7 @@ db.setupDatabase = () => {
 
 }
 
-const find = async (query, whereBind=[])=>{
+find = async (query, whereBind=[])=>{
   console.log(query)
   return db.all(query, whereBind, (err, result) => {
     console.log(result, err)
