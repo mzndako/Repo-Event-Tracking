@@ -15,7 +15,7 @@ const addEvent = async (data) => {
     let results = database.find(sql, bindParam);
 
     if (results.length > 0) {
-      return Promise.reject("Event already created");
+      return Promise.reject('Event already created');
     }
 
     // Insert into the events TABLE
