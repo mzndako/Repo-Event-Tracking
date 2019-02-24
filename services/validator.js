@@ -1,6 +1,6 @@
 /**
  * Valid request
  */
- const validate = (arr) => {
-   
+ const validate = (array) => {
+   r
  }
