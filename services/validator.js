@@ -26,4 +26,4 @@ const processError = (error) => {
 module.exports = {
    validate,
    processError
- }
+};
