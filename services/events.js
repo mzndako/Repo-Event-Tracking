@@ -49,7 +49,7 @@ const addEvent = async (data) => {
   } catch (error) {
     return Promise.reject(error);
   }
-}
+};
 
 module.exports = {
   getAllEvents
