@@ -39,11 +39,11 @@ const addEvent = async (data) => {
     // Search whether the repo exist in the repos TABLE
     sql = 'SELECT id FROM repos where id = ?';
     bindParam = [data.repo.id];
-    results = adatabase.find(sql, bindParam);
+    results = await database.find(sql, bindParam);
     if (results.length === 0) {
       // Create a new repo
       sql = 'INSERT INTO repos (id, name, url) VALUES (?, ?, ?)';
-      bindParam = [data.repo.id, data.repo.login, data.repo.avatar_url];
+      bindParam = [data.repo.id, data.repo.name, data.repo.url];
       await database.insert(sql, bindParam);
     };
 
