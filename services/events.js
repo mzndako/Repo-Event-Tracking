@@ -73,7 +73,7 @@ const addEvent = async (data) => {
 
 /**
  * Get Events by actorId
- * 
+ * @param
  */
 const getByActor = (actorId) => {
   
