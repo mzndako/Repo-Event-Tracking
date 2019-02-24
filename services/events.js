@@ -27,7 +27,7 @@ const addEvent = async (data) => {
     bindParam = [data.actor.id];
     results = database.find(sql, bindParam);
     if (results.length === 0){
-      // Create a new user as this does exist
+      // Create a new 
       sql = 'INSERT INTO actors (id, login, avatar_url) VALUES (?, ?, ?)';
       bindParam = [data.actor.id, data.actor.login, data.actor.avatar_url];
       await database.insert(sql, bindParam);
@@ -38,7 +38,7 @@ const addEvent = async (data) => {
     bindParam = [data.repo.id];
     results = database.find(sql, bindParam);
     if (results.length === 0){
-      // Create a new repo as this does exist
+      // Create a new repo
       sql = 'INSERT INTO repos (id, name, url) VALUES (?, ?, ?)';
       bindParam = [data.actor.id, data.actor.login, data.actor.avatar_url];
       await database.insert(sql, bindParam);
