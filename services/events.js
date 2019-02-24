@@ -67,7 +67,7 @@ const getByActor = (actorId) => {
 
 /**
  * Erase all events
- * @param {Integer} actorId - Actor Id
+ * 
  */
 const eraseEvents = () => {
   let sql = 'DELETE FROM events';
