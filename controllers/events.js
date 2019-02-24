@@ -5,7 +5,7 @@
  * @return null
  */
 const getAllEvents = (req, res) => {
-
+  
 };
 
 var addEvent = () => {
