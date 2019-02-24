@@ -2,7 +2,7 @@
  * Valid request
  */
  const validate = (array) => {
-   for(let i = ar)
+   for(let i = 0; )
  };
  
  const processError = (error) => {
