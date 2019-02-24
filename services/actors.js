@@ -4,7 +4,7 @@ const database = require('./../models/config');
  * Retrieve all actors
  */
 const getAllActors = () => {
-  let sql = 'SELECT ';
+  let sql = 'SELECT *';
 
   return database.find(sql).then(events => {
     let results = processEvents(events);
