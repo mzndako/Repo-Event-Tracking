@@ -17,7 +17,7 @@ const addEvent = async (data) => {
       return Promise.reject("Event already created")
     }
     sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
-    bindParam = [data.id, data.type, da]
+    bindParam = [data.id, data.type, data.actor]
     await database.insert
   }catch(error){
     return Promise.reject(error);
