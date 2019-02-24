@@ -55,7 +55,7 @@ const getByActor = (req, res) => {
 
 
 const eraseEvents = () => {
-  eventsServices
+  eventsServices.erase
 };
 
 module.exports = {
