@@ -1,1 +1,1 @@
-const database = r
+const database = require()
