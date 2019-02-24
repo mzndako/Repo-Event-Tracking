@@ -39,7 +39,7 @@ const addEvent = (req, res) => {
   }).catch(error => res.status(400).send(processError(error)));
 };
 
-const getByActor = () => {
+const getByActor = (r) => {
   
 };
 
