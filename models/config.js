@@ -10,7 +10,7 @@ db.setupDatabase = () => {
 
 /**
  * Query the database
- * @param {query} 
+ * @param {query} - Quc
  */
 db.find = async (query, whereBind=[])=>{
   console.log(query)
