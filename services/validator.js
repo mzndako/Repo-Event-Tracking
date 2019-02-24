@@ -1,9 +1,9 @@
 /**
  * Valid request
  */
- const validate = (body, array) => {
+ const validate = (body, expectedError) => {
    for(let i = 0; i < body.length; i++){
-     if (obj)
+     if (expectedError)
    }
  };
  
