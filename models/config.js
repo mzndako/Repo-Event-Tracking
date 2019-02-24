@@ -22,7 +22,7 @@ db.find = (query, whereBind=[])=>{
     db.all(query, whereBind, (err, result) => {
       console.log(result);
       if(err){
-        reject(err);
+        return reject(err);
       };
       
       resolve(result);
