@@ -1,4 +1,6 @@
 /**
  * Valid request
  */
- const validate = () => 
+ const validate = () => {
+   
+ }
