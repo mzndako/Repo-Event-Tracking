@@ -9,7 +9,7 @@ const getAllEvents = () => {
 };
 
 const addEvent = async (data) => {
-  let 
+  let sql
   await database.insert
 }
 
