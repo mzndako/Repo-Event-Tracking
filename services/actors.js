@@ -60,7 +60,7 @@ const getActor = async (actorId) => {
 const getStreak = async (actorId) => {
   getAllActors().then(events => {
     
-  })
+  });
 };
 
 module.exports = {
