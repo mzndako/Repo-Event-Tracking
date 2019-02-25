@@ -100,7 +100,7 @@ const getStreak = async (actorId) => {
       return -1;
     });
     sortedActors = sortedActors.map(actor => {
-      delete actor.c
+      delete actor.count;
     })
     return Promise.resolve(sortedActors);
   }).catch(error => console.log(error));
