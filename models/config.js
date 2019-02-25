@@ -11,7 +11,7 @@ db.setupDatabase = async () => {
     db.run('CREATE TABLE IF NOT EXISTS actors(id INTEGER, login VARCHAR(50), avatar_url VARCHAR(500), PRIMARY KEY(id))')
     db.run('CREATE TABLE IF NOT EXISTS repos(id INTEGER, name VARCHAR(200), url VARCHAR(500), PRIMARY KEY(id))')
   });
-  
+  })
   console.log("done creating")
 }
 
