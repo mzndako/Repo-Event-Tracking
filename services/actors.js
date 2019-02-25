@@ -22,7 +22,7 @@ const updateActor = (actor) => {
   let {id, login, avatar_url} = actor;
   try{
     
-  }c
+  }catch()
 }
 
 module.exports = {
