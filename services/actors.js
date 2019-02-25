@@ -25,7 +25,7 @@ const updateActor = (actor) => {
     let bindParam = [id];
     let result = database.find(sql, bindParam);
     if(result.length === 0){
-      return
+      return Promise
     }
     return Promise.resolve()
   }catch(error){
