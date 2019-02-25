@@ -115,5 +115,5 @@ module.exports = {
   getAllEvents,
   addEvent,
   getByActor,
-  erase
+  eraseEvents
 };
