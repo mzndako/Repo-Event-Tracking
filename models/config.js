@@ -68,8 +68,6 @@ db.delete = async (query) => {
   return await db.run(query)
 }
 
-// Drop all tables and create a new one
-db.dropAllTables().then(result=>db.setupDatabase())
 
 
 //db.find('SELECT * FROM events ')
