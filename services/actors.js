@@ -87,7 +87,7 @@ const getStreak = async (actorId) => {
       }
       newActors.push(actors[key]);
     }
-    l
+    let sort
     return Promise.resolve(actors);
   }).catch(error => console.log(error));
 };
