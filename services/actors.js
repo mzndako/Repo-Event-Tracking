@@ -8,10 +8,7 @@ const getAllActors = () => {
 
   return database.find(sql).then(events => {
     let results = events.map(event => {
-      let newEvent = {
-        id: event.id,
-        login
-      }
+      
     })
     return Promise.resolve(results);
   }).catch(error => Promise.reject(error));
