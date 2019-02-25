@@ -22,6 +22,8 @@ var updateActor = async (req, res) => {
     }).catch
   })
   }catch(error){
+    res.status(400).send(processError('You can only update avatar_url'))
+  }
 };
 
 var getStreak = () => {
