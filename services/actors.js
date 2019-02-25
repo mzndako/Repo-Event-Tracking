@@ -76,7 +76,7 @@ const getStreak = async (actorId) => {
       compare.id = actor.id;
       compare.count++;
     }
-    return Promise.resolve(actors)
+    return Promise.resolve(actors);
   });
 };
 
