@@ -14,7 +14,7 @@ db.dropAllTables = async () => {
   await db.run('DROP TABLE IF EXISTS events');
   await db.run('DROP TABLE IF EXISTS actors');
   await db.run('DROP TABLE IF EXISTS repos');
-  console.log("do")
+  console.log("done drop")
   return Promise.resolve();
 }
 
