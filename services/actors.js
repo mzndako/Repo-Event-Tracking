@@ -27,7 +27,7 @@ const updateActor = async (actor) => {
     if(result.length === 0){
       return Promise.reject(404)
     }
-    let retriev
+    let retrieveActo
     return Promise.resolve()
   }catch(error){
     return Promise.reject(error);
