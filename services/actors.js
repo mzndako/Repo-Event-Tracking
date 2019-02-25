@@ -83,7 +83,7 @@ const getStreak = async (actorId) => {
     let newActors = [];
     for(let key in actors){
       if(!actors.hasOwnProperty(key)){
-        cont
+        continue;
       }
       newActors.push(actors[key]);
     }
