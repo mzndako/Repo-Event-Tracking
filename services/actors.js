@@ -57,7 +57,7 @@ const getActor = async (actorId) => {
  * @param {String} actorId - Actor unique id
  * @return A promise of Actor details or null if actor not found
  */
-const getStre = async (actorId) => {
+const getStreak = async (actorId) => {
   let sql = 'SELECT * FROM actors WHERE id = ?';
   let bindParam = [actorId];
 
@@ -75,5 +75,5 @@ const getStre = async (actorId) => {
 module.exports = {
   getAllActors,
   updateActor,
-  getActor
+  getActor,
 }
