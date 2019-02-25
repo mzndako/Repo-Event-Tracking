@@ -18,14 +18,14 @@ const getAllActors = () => {
 /**
  * 
  */
-const updateActor = (actor) => {
+const updateActor = a(actor) => {
   let {id, login, avatar_url} = actor;
   try{
     let sql = 'SELECT * FROM actors WHERE id = ?';
     let bindParam = [id];
     let result = database.find(sql, bindParam);
     if(result.length === 0){
-      return Promise
+      return Promise.
     }
     return Promise.resolve()
   }catch(error){
