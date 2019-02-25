@@ -26,7 +26,7 @@ const updateActor = async (actor) => {
     
     let result = database.find(sql, bindParam);
     if(result.length === 0){
-      return Promise.reject(404)
+      return Promise.reject(404); // 
     }
     
     let dbActor = result[0];
@@ -38,7 +38,7 @@ const updateActor = async (actor) => {
     bindParam = [login, id];
     database.update(sql, bindParam);
     
-    return Promise.resolve(200)
+    return Promise.resolve(200);
   }catch(error){
     return Promise.reject(error);
   }
