@@ -100,7 +100,7 @@ const getStreak = async (actorId) => {
           return -1;  
         }
       }
-      if () {
+      if (a) {
         
       }
       return 0;
