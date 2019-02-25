@@ -9,6 +9,7 @@ const getAllActors = (req, res) => {
 
 const updateActor = async (req, res) => {
   let actor = req.body.actor;
+
   try {
     let retrievedActor = await actorsServices.getActor(actor.id);
 
