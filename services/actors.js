@@ -52,7 +52,7 @@ const getActor = async () => {
   if(result.length === 0){
      return null; // No Actor not found
   }
-  return resul
+  return result[0]
 }
 
 module.exports = {
