@@ -84,6 +84,7 @@ const getStreak = async (actorId) => {
     for(let key in actors){
       newActors.push(actors[key]);
     }
+
     return Promise.resolve(actors);
   }).catch(error => console.log(error));
 };
