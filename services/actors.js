@@ -77,7 +77,7 @@ const getStreak = async (actorId) => {
       }
       compare.id = actor.id;
       compare.count++;
-      compare.created_at = events[]
+      compare.created_at = events[i].cr
     }
     console.log(compare);
     return Promise.resolve(actors);
