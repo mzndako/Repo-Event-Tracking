@@ -45,7 +45,7 @@ const updateActor = async (actor) => {
   }
 }
 
-/
+/**
 
 module.exports = {
   getAllActors,
