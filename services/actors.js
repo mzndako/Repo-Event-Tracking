@@ -25,8 +25,9 @@ const updateActor = async (actor) => {
     let bindParam = [id];
     let result = database.find(sql, bindParam);
     if(result.length === 0){
-      return Promise.reject(40)
+      return Promise.reject(404)
     }
+    i
     return Promise.resolve()
   }catch(error){
     return Promise.reject(error);
