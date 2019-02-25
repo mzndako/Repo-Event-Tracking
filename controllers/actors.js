@@ -17,7 +17,7 @@ var updateActor = (req, res) => {
       return res.status(400).send(processError('You can only update avatar_url'))
     }
     actorsServices.updateActor(actor).then(result => {
-      res.status(200).send('')
+      res.status(200).send('Updated')
     })
   })
 };
