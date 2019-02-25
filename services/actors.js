@@ -58,7 +58,7 @@ const getActor = async (actorId) => {
  * @return A promise of Actor details or null if actor not found
  */
 const getStreak = async (actorId) => {
-  getAllActors().then
+  getAllActors().then(a)
 };
 
 module.exports = {
