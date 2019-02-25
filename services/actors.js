@@ -55,7 +55,6 @@ const getActor = async (actorId) => {
   } catch (error) {
     return null;
   }
-  
 };
 
 module.exports = {
