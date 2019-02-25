@@ -46,7 +46,7 @@ const updateActor = async (actor) => {
 }
 
 /**
- * Ge
+ * Get an ac
  */
 
 module.exports = {
