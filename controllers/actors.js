@@ -21,6 +21,7 @@ var updateActor = async (req, res) => {
     }
 
     let updated = await actorsServices.updateActor(actor);
+
   }catch(error){
     res.status(400).send(processError(error))
   }
