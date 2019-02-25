@@ -24,7 +24,7 @@ const updateActor = async (actor) => {
     let sql = 'SELECT * FROM actors WHERE id = ?';
     let bindParam = [id];
     
-let result = database.find(sql, bindParam);
+    let result = database.find(sql, bindParam);
     if(result.length === 0){
       return Promise.reject(404)
     }
@@ -34,7 +34,7 @@ let result = database.find(sql, bindParam);
       return Promise.reject(400); // Not allowed to update the avatar_url
     }
     
-    sql = 
+    sql = ''
     database.update()
     return Promise.resolve()
   }catch(error){
