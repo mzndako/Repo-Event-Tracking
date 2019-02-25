@@ -23,7 +23,7 @@ const updateActor = (actor) => {
   try{
     
   }catch(error){
-    return Promise.
+    return Promise.r
   }
 }
 
