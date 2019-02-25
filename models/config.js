@@ -66,7 +66,7 @@ db.delete = async (query) => {
   return await db.run(query)
 }
 
-// Drop all tables and 
+// Drop all tables and create
 db.dropAllTables().then(result=>db.setupDatabase())
 //db.find('SELECT actors.*, count(events.id) as event_count from actors inner join events on actors.id = events.actor_id GROUP BY events.actor_id events.created_at order by event_count DESC')
 //db.find('SELECT * FROM events ')
