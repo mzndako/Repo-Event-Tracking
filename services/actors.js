@@ -92,7 +92,7 @@ const getStreak = async (actorId) => {
         return 1;
       }
       if(a.count === b.count){
-        if(n)
+        if(new Date)
       }
       return false;
     });
