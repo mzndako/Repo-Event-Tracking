@@ -87,7 +87,7 @@ describe('git_test ', function() {
 							console.log("==",e.request.url);
 		 					expect(ar2.length).to.equal(ar1.length);
 							for (let k = 0; k < ar1.length; k++) {
-							  console.log(ar1[k].id)
+							  console.log(ar1[k].i)
 								expect(ar2[k]).to.deep.equal(ar1[k]);
 							}
 						}
