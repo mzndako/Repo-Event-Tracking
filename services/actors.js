@@ -50,7 +50,7 @@ const getActor = async (actorId) => {
   if (result.length === 0) {
      return null; // No Actor not found
   };
-  
+  }ca
 
   return result[0];
 };
