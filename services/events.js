@@ -28,7 +28,7 @@ const addEvent = async (data) => {
 
     // Insert into the events TABLE
     sql = 'INSERT INTO events (id, type, actor_id, repo_id, created_at) VALUES (?, ?, ?, ?, ?)';
-    bindParam = [data.id, data.type, data.actor.id, data.repo.id, data.creat];
+    bindParam = [data.id, data.type, data.actor.id, data.repo.id, data.created_at];
     await database.insert(sql, bindParam);
 
     // Search whether the actor exist in the actors TABLE
