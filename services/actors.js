@@ -28,7 +28,9 @@ const updateActor = async (actor) => {
       return Promise.reject(404)
     }
     let dbActor = result[0];
-    if(dbActor.avatar_url !== a)
+    if(dbActor.avatar_url !== avatar_url){
+      
+    }
     return Promise.resolve()
   }catch(error){
     return Promise.reject(error);
