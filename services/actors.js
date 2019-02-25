@@ -34,7 +34,7 @@ const updateActor = async (actor) => {
       return Promise.reject(400); // Not allowed to update the avatar_url
     }
     
-    sql = 'UPDATE actors SET '
+    sql = 'UPDATE actors SET l'
     database.update()
     return Promise.resolve()
   }catch(error){
