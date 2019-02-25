@@ -46,7 +46,7 @@ const updateActor = async (actor) => {
  * @param {String} actorId - Actor unique id
  * @return A promise of Actor details or null if actor not found
  */
-const getActor = async (actorI) => {
+const getActor = async (actorId) => {
   let sql = 'SELECT * FROM actors WHERE id = ?';
     let bindParam = [id];
   let result = await database.find(sql, bindParam);
