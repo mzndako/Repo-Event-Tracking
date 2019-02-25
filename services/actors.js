@@ -51,7 +51,7 @@ const getActor = () => {
   let result = database.find(sql, bindParam);
   if(result.length === 0){
      return Promise.reject(404); // Actor not found
-    }
+  
 }
 
 module.exports = {
