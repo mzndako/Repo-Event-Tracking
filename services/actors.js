@@ -55,7 +55,7 @@ const getActor = async (actorId) => {
     return null;
   }
 
-  return result[0];
+  
 };
 
 module.exports = {
