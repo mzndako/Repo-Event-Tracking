@@ -91,7 +91,7 @@ const getStreak = async (actorId) => {
       if (a.count < b.count){
         return 1;
       }
-      if(b.count > a.count){
+      if(.count > a.count){
         return -1;
       }
       if(a.count === b.count){
