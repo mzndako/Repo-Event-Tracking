@@ -103,6 +103,7 @@ const getStreak = async (actorId) => {
       return {
         id: actor.id,
         login: actor.login,
+        
       }
     })
     return Promise.resolve(sortedActors);
