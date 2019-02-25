@@ -51,7 +51,7 @@ const getActor = async (actorId) => {
   let bindParam = [actorId];
 
   let result = await database.find(sql, bindParam);
-  if (result.length === 0) {
+  if (result.length == 0) {
      return null; // No Actor not found
   };
 
