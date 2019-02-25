@@ -88,7 +88,7 @@ const getStreak = async (actorId) => {
       newActors.push(actors[key]);
     }
     let sortedActors = newActors.sort((a, b) => {
-      if (a.cou)
+      if (a.count > b.c)
     });
     return Promise.resolve(actors);
   }).catch(error => console.log(error));
