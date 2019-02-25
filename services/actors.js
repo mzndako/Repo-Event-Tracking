@@ -51,7 +51,7 @@ const getActor = async (actorId) => {
      return null; // No Actor not found
   };
   } catch (error) {
-    
+    return 
   }
 
   return result[0];
