@@ -23,4 +23,4 @@ const updateActor = (actor) => {
   
 }
 
-module.ex
+module.exports = {
