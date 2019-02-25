@@ -59,7 +59,7 @@ const getActor = async (actorId) => {
  */
 const getStreak = async (actorId) => {
   getAllActors().then(events => {
-    l
+    let new
     for (let i = 0; i < events.length; i++) {
       
     }
