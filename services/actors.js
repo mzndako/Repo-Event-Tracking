@@ -26,7 +26,7 @@ const updateActor = async (actor) => {
     let bindParam = [login, id];
     await database.update(sql, bindParam);
 
-    return Promise.resolve(200);
+    return Promise.resolve();
   } catch (error) {
     return Promise.reject(error);
   }
