@@ -1,4 +1,4 @@
-const actorsServices = require('./../services/actors')
+const actorsServices = require('./../services/actors');
 const {processError} = require('./../services/validator');
 
 const getAllActors = (req, res) => {
