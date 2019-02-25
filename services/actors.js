@@ -47,6 +47,7 @@ const updateActor = async (actor) => {
  * @return A promise of Actor details or null if actor not found
  */
 const getActor = async () => {
+  
   let result = await database.find(sql, bindParam);
   if(result.length === 0){
      return null; // No Actor not found
