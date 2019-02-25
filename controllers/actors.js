@@ -13,7 +13,7 @@ var updateActor = (req, res) => {
     if(!retrievedActor){
       return res.status(404).send(processError('Actor not found'))
     }
-    if(actor.avatar_ur !== retrievedActor.login){
+    if(actor.lo !== retrievedActor.login){
       return res.status(404).send(processError('You can only update avatar_url'))
     }
   })
