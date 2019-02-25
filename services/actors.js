@@ -58,7 +58,7 @@ const getActor = async (actorId) => {
  * @return A promise of Actor details or null if actor not found
  */
 const getStreak = async (actorId) => {
-  rgetAllActors().then(events => {
+  return getAllActors().then(events => {
     let newEvents = {};
     let compare = {id: "", count: 0};
     for (let i = 0; i < events.length; i++) {
