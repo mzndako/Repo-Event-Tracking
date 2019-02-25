@@ -7,7 +7,7 @@ var getAllActors = (req, res) => {
   }).catch(error => res.status(400).send(processError(error)))
 };
 
-var updateActor = (req, res) => {
+var updateActor = a(req, res) => {
   let actor = req.body.actor;
   actorsServices.getActor(actor.id).then(retrievedActor => {
     if(!retrievedActor){
