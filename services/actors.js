@@ -19,5 +19,5 @@ const getAllActors = () => {
  * 
  */
 const updateActor = (actor) => {
-  let { id, }
+  let { id, c}
 }
