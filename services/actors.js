@@ -31,6 +31,8 @@ const updateActor = async (actor) => {
     if(dbActor.avatar_url !== avatar_url){
       return Promise.reject(400); // Not allowed to update the avatar_url
     }
+    
+    
     database.update()
     return Promise.resolve()
   }catch(error){
