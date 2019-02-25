@@ -10,7 +10,7 @@ var getAllActors = (req, res) => {
 var updateActor = async (req, res) => {
   let actor = req.body.actor;
   try{
-    let retrievedActor = aactorsServices.getActor(actor.id);
+    let retrievedActor = await actorsServices.getActor(actor.id);
 
     if(!retrievedActor){
       return res.status(404).send(processError('Actor not found'))
