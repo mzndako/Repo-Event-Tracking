@@ -13,7 +13,7 @@ var updateActor = (req, res) => {
     if(!retrievedActor){
       return res.status(404).send(processError('Actor not found'))
     }
-    if(actor.avatar_url === retrievedActor.ava)
+    if(actor.avatar_url === retrievedActor.avatar_url)
   })
 };
 
