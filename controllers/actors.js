@@ -11,7 +11,7 @@ var updateActor = (req, res) => {
   let actor = req.body.actor;
   actorsServices.getActor(actor.id).then(retrievedActor => {
     if(!retrievedActor){
-      return res.status(404).send('Ac')
+      return res.status(404).send('Act')
     }
   })
 };
