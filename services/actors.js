@@ -21,7 +21,7 @@ const getAllActors = () => {
 const updateActor = (actor) => {
   let {id, login, avatar_url} = actor;
   try{
-    let actor
+    let acto
     return Promise.resolve()
   }catch(error){
     return Promise.reject(error);
