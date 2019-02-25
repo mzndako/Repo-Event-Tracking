@@ -7,9 +7,9 @@ var db = new sqlite.Database('database/db.sqlite')
 db.setupDatabase = async (dropTable) => {
   db.serialize(() => {
     if()
-    db.run('DROP TABLE IF EXISTS events');
-    db.run('DROP TABLE IF EXISTS actors');
-    db.run('DROP TABLE IF EXISTS repos');
+      db.run('DROP TABLE IF EXISTS events');
+      db.run('DROP TABLE IF EXISTS actors');
+      db.run('DROP TABLE IF EXISTS repos');
     }
     db.serialize(() => {
       db.run('CREATE TABLE IF NOT EXISTS events(id INTEGER, type VARCHAR(50), actor_id INTEGER, repo_id INTEGER, created_at DATETIME, PRIMARY KEY(id))');
