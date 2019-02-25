@@ -31,7 +31,6 @@ var getStreak = () => {
 
 };
 
-
 module.exports = {
 	updateActor: updateActor,
 	getAllActors: getAllActors,
