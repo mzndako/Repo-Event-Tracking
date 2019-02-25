@@ -83,7 +83,7 @@ describe('git_test ', function() {
 							if(e.response.status_code == 404) {
 								continue;
 							}
-							console.log(results[j].body)
+							console.log(results[j].u)
 							console.log(ar2.length, "===", ar1.length)
 		 					expect(ar2.length).to.equal(ar1.length);
 		 					
