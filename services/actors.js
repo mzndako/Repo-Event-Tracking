@@ -23,7 +23,8 @@ const updateActor = async (actor) => {
   try{
     let sql = 'SELECT * FROM actors WHERE id = ?';
     let bindParam = [id];
-    let result = database.find(sql, bindParam);
+    
+let result = database.find(sql, bindParam);
     if(result.length === 0){
       return Promise.reject(404)
     }
