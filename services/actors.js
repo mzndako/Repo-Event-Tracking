@@ -50,8 +50,9 @@ const updateActor = async (actor) => {
 const getActor = async () => {
   let result = await database.find(sql, bindParam);
   if(result.length === 0){
-     return null; //  Actor not found
+     return null; // No Actor not found
   }
+  
 }
 
 module.exports = {
