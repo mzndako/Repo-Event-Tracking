@@ -20,7 +20,7 @@ var updateActor = async (req, res) => {
     actorsServices.updateActor(actor).then(result => {
       res.status(200).send(result)
     })
-    let updated 
+    let updated = awai
   }catch(error){
     res.status(400).send(processError(error))
   }
