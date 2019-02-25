@@ -20,7 +20,9 @@ const getAllActors = () => {
  */
 const updateActor = (actor) => {
   let {id, login, avatar_url} = actor;
-  tr
+  try{
+    
+  }c
 }
 
 module.exports = {
