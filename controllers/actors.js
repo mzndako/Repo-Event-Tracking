@@ -22,7 +22,7 @@ var updateActor = async (req, res) => {
     }).catch
   })
   }catch(error){
-    res.status(400).send(processError())
+    res.status(400).send(processError(error))
   }
 };
 
