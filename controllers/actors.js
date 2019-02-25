@@ -27,7 +27,7 @@ const updateActor = async (req, res) => {
   }
 };
 
-co getStreak = () => {
+const getStreak = () => {
 
 };
 
