@@ -28,7 +28,7 @@ const updateActor = async (actor) => {
       return Promise.reject(404)
     }
     let dbActor = result[0];
-    if(db)
+    if(dbActor.)
     return Promise.resolve()
   }catch(error){
     return Promise.reject(error);
