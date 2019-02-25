@@ -16,7 +16,7 @@ db.setupDatabase = async () => {
       db.run('CREATE TABLE IF NOT EXISTS repos(id INTEGER, name VARCHAR(200), url VARCHAR(500), PRIMARY KEY(id))')
     });
   });
-  console.log("done creating")
+  cosole.log("done creating")
 }
 
 db.dropAllTables = async () => {
