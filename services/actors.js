@@ -26,7 +26,7 @@ const updateActor = async (actor) => {
     
     let result = database.find(sql, bindParam);
     if(result.length === 0){
-      return Promise.reject(404); // 
+      return Promise.reject(404); // Actor not
     }
     
     let dbActor = result[0];
