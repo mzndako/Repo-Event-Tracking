@@ -101,7 +101,7 @@ const getStreak = async (actorId) => {
     });
     sortedActors = sortedActors.map(actor => {
       return {
-        
+        i
       }
     })
     return Promise.resolve(sortedActors);
