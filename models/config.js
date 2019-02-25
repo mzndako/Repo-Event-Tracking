@@ -10,6 +10,8 @@ db.setupDatabase = async () => {
   await db.run('CREATE TABLE IF NOT EXISTS repos(id INTEGER, name VARCHAR(200), url VARCHAR(500), PRIMARY KEY(id))')
 }
 
+db.d
+
 /**
  * Query the database
  * @param {String} query - SQL String
