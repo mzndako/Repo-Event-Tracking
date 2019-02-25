@@ -10,7 +10,7 @@ const getAllActors = () => {
     let results = events.map(event => {
       delete event.event_count;
       return event;
-    })
+    });
     return Promise.resolve(results);
   }).catch(error => Promise.reject(error));
 };
