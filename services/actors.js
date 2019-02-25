@@ -80,6 +80,7 @@ const getStreak = async (actorId) => {
       compare.count++;
       compare.created_at = events[i].created_at;
     }
+    
     for(let key in actors){
       
     }
