@@ -30,7 +30,7 @@ const updateActor = async (req, res) => {
 };
 
 const getStreak = (req, res) => {
-  actorsServices.getAllActors().then(actors => {
+  actorsServices.get().then(actors => {
     res.status(200).send(actors);
   }).catch(error => res.status(400).send(processError(error)));
 };
