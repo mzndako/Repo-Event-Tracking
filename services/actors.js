@@ -103,7 +103,7 @@ const getStreak = async (actorId) => {
           return -1;  
         }
       }
-      console.log("")
+      console.log("name Com")
       if (a.login < b.login) {
         return 1;
       } else if(a.login > b.login) {
