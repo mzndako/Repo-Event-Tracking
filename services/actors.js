@@ -61,7 +61,7 @@ const getActor = async (actorId) => {
 const getStreak = async (actorId) => {
   return eventsServices.getAllEvents().then(events => {
     let actors = {};
-    let compare = {id: "", count: 0, created_at:};
+    let compare = {id: "", count: 0, created_at: ""};
     //console.log(events);
     for (let i = 0; i < events.length; i++) {
       let actor = events[i].actor;
