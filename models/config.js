@@ -12,7 +12,8 @@ db.setupDatabase = async () => {
 
 db.dropAllTables = async () => {
   await db.run('DROP TABLE events');
-  await db.run('DROP TABLE actors')
+  await db.run('DROP TABLE actors');
+  await db.run('DROP TABLE actors');
 }
 
 /**
