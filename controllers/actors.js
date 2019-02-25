@@ -30,7 +30,7 @@ const updateActor = async (req, res) => {
 };
 
 const getStreak = (req, res) => {
-  res
+  res.status
 };
 
 module.exports = {
