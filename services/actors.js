@@ -58,18 +58,7 @@ const getActor = async (actorId) => {
  * @return A promise of Actor details or null if actor not found
  */
 const getStreak = async (actorId) => {
-  let sql = 'SELECT * FROM actors WHERE id = ?';
-  let bindParam = [actorId];
-
-  try {
-    let result = await database.find(sql, bindParam);
-    if (result.length === 0) {
-       return null; // No Actor not found
-    };
-    return result[0];
-  } catch (error) {
-    return null;
-  }
+  
 };
 
 module.exports = {
