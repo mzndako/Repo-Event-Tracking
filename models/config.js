@@ -11,7 +11,7 @@ db.setupDatabase = async () => {
 }
 
 db.dropAllTables = async () => {
-  await db.run('DROP TABLE IF NO EXIST events');
+  await db.run('DROP TABLE IF EXIST events');
   await db.run('DROP TABLE actors');
   await db.run('DROP TABLE repos');
 }
