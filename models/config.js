@@ -12,7 +12,7 @@ db.setupDatabase = async () => {
 
 db.dropAllTables = async () => {
   await db.run('DROP TABLE events');
-  await db.run('DRO')
+  await db.run('DROP table')
 }
 
 /**
