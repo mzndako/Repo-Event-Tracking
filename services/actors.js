@@ -36,7 +36,7 @@ const updateActor = async (actor) => {
     database.update(sql, bindParam);
     
     return Promise.resolve(200);
-  }catch(error){
+  } catch(error){
     return Promise.reject(error);
   }
 };
