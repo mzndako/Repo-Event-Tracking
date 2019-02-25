@@ -60,5 +60,5 @@ const getActor = async (actorId) => {
 module.exports = {
   getAllActors,
   updateActor,
-  getAc
+  getActor
 }
