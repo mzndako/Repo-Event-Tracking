@@ -91,6 +91,7 @@ const getStreak = async (actorId) => {
       if (a.count < b.count){
         return 1;
       }
+      if()
       return false;
     });
     return Promise.resolve(sortedActors);
