@@ -99,13 +99,13 @@ const getStreak = async (actorId) => {
       }
       return -1;
     });
-    sortedActors = sortedActors.map(actor => {
-      return {
-        id: actor.id,
-        login: actor.login,
-        avatar_url: actor.avatar_url
-      }
-    })
+    // sortedActors = sortedActors.map(actor => {
+    //   return {
+    //     id: actor.id,
+    //     login: actor.login,
+    //     avatar_url: actor.avatar_url
+    //   }
+    // })
     return Promise.resolve(sortedActors);
   }).catch(error => console.log(error));
 };
