@@ -25,5 +25,5 @@ const updateActor = (actor) => {
 
 module.exports = {
   getAllActors,
-  
+  updateActor
 }
