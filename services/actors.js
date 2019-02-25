@@ -48,7 +48,7 @@ const updateActor = async (actor) => {
 /**
  * Get an actor detail
  * @param {String} actorId - Actor unique id
- * @return Actor details or nul
+ * @return Actor details or null if acto
  */
 
 module.exports = {
