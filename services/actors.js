@@ -18,6 +18,6 @@ const getAllActors = () => {
 /**
  * 
  */
-const updateActor = (a) => {
+const updateActor = (actor_id, ) => {
   
 }
