@@ -87,7 +87,7 @@ const getStreak = async (actorId) => {
           actors[compare.id].created_at = compare.created_at;
         }
         compare.count = 0;
-      }
+    }
       
     let newActors = [];
     for(let key in actors){
