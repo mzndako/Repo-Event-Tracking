@@ -7,7 +7,7 @@ const getAllActors = (req, res) => {
   }).catch(error => res.status(400).send(processError(error)));
 };
 
-con updateActor = async (req, res) => {
+const updateActor = async (req, res) => {
   let actor = req.body.actor;
   try {
     let retrievedActor = await actorsServices.getActor(actor.id);
@@ -27,7 +27,7 @@ con updateActor = async (req, res) => {
   }
 };
 
-var getStreak = () => {
+co getStreak = () => {
 
 };
 
