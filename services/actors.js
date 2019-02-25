@@ -20,7 +20,7 @@ const getAllActors = () => {
  * @param {Object} actor - Actor object containing the id, login and avatar_url
  */
 const updateActor = async (actor) => {
-  let {id, login,avatar_url} = actor;
+  let {id, avatar_url} = actor;
   try{
     let sql = 'UPDATE actors SET login = ? WHERE id = ?';
     let bindParam = [login, id];
