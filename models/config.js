@@ -69,7 +69,7 @@ db.delete = async (query) => {
 // Drop all tables and create a new one
 db.dropAllTables().then(result=>db.setupDatabase())
 
-//db.find('SELECT actors.*, count(events.id) as event_count from actors inner join events on actors.id = events.actor_id GROUP BY events.actor_id events.created_at order by event_count DESC')
+
 //db.find('SELECT * FROM events ')
 //db.insert("UPDATE actors SET login = ? WHERE id=?", ['mz', 3213163])
 //db.find('SELECT * FROM actors where id = 3213163')
