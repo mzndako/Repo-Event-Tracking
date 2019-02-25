@@ -4,7 +4,7 @@ var db = new sqlite.Database('database/db.sqlite')
 /**
  * Call the function to setup the database
  */
-db.setupDatabase = async (drop) => {
+db.setupDatabase = async (dropTable) => {
   db.serialize(() => {
     db.run('DROP TABLE IF EXISTS events');
     db.run('DROP TABLE IF EXISTS actors');
