@@ -25,10 +25,7 @@ const updateActor = async (actor) => {
     let sql = 'SELECT * FROM actors WHERE id = ?';
     let bindParam = [id];
     
-    let result = database.find(sql, bindParam);
-    if(result.length === 0){
-      return Promise.reject(404); // Actor not found
-    }
+    
     
     let dbActor = result[0];
     if(dbActor.avatar_url !== avatar_url){
