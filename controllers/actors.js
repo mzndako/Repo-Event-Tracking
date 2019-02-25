@@ -14,7 +14,7 @@ var updateActor = (req, res) => {
       return res.status(404).send(processError('Actor not found'))
     }
     if(actor.avatar_url !== retrievedActor.avatar_url){
-      return res.status(404).send(processError('You can only '))
+      return res.status(404).send(processError('You can only update Ava'))
     }
   })
 };
