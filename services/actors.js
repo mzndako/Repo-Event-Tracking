@@ -8,7 +8,7 @@ const getAllActors = () => {
 
   return database.find(sql).then(events => {
     let results = events.map(event => {
-      delete
+      delete eve
     })
     return Promise.resolve(results);
   }).catch(error => Promise.reject(error));
