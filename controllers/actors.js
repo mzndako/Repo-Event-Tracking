@@ -30,7 +30,7 @@ const updateActor = async (req, res) => {
 };
 
 const getStreak = (req, res) => {
-  res.send()
+  res.send([])
 };
 
 module.exports = {
