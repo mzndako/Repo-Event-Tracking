@@ -99,6 +99,7 @@ const getStreak = async (actorId) => {
         } else if (date1 > date2) {
           return -1;  
         }
+
       }
       return -1;
     });
