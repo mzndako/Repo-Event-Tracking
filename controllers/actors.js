@@ -1,13 +1,13 @@
 const actorsServices = require('./../services/actors')
 const {processError} = require('./../services/validator');
 
- getAllActors = (req, res) => {
+const getAllActors = (req, res) => {
   actorsServices.getAllActors().then(actors => {
     res.status(200).send(actors);
   }).catch(error => res.status(400).send(processError(error)));
 };
 
-var updateActor = async (req, res) => {
+con updateActor = async (req, res) => {
   let actor = req.body.actor;
   try {
     let retrievedActor = await actorsServices.getActor(actor.id);
