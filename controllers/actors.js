@@ -13,7 +13,7 @@ var updateActor = async (req, res) => {
     let retrievedActor = await actorsServices.getActor(actor.id);
 
     if(!retrievedActor){
-      return res.status(404).send(processError('Actor not found'))
+      return res.status(404).send(processError('Actor not found'));
     }
 
     if(actor.login !== retrievedActor.login){
