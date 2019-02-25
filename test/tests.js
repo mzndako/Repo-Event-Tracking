@@ -84,7 +84,7 @@ describe('git_test ', function() {
 								continue;
 							}
 		 					expect(ar2.length).to.equal(ar1.length);
-		 					console.log(ar2, "===", )
+		 					console.log(ar2, "===", ar1)
 							for (let k = 0; k < ar1.length; k++) {
 								expect(ar2[k]).to.deep.equal(ar1[k]);
 							}
