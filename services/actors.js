@@ -23,7 +23,7 @@ const updateActor = (actor) => {
   try{
     let sql = 'SELECT * FROM actors WHERE id = ?';
     let bindParam = [id];
-    let result = database.find(s)
+    let result = database.find(sql, bindParam)
     return Promise.resolve()
   }catch(error){
     return Promise.reject(error);
