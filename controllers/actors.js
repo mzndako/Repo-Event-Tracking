@@ -3,7 +3,7 @@ const {processError} = require('./../services/validator');
 
 var getAllActors = (req, res) => {
   actorsServices.getAllActors().then(actors => {
-    res.send
+    res.
   }).catch(error => res.status(400).send(processError(error)))
 };
 
