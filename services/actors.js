@@ -76,4 +76,5 @@ module.exports = {
   getAllActors,
   updateActor,
   getActor,
+  getStreak
 }
