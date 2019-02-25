@@ -29,7 +29,7 @@ const updateActor = async (req, res) => {
   }
 };
 
-const getStreak = (r) => {
+const getStreak = (req, res) => {
 
 };
 
