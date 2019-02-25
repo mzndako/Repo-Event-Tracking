@@ -92,7 +92,7 @@ const getStreak = async (actorId) => {
         return 1;
       }
       if(a.count === b.count){
-        let start_date = new Date(a.created_at).getTime();
+        let date = new Date(a.created_at).getTime();
         let 
         if(new Date(a.created_at).getTime() < new Date(b.created_at)){
           return 1;
