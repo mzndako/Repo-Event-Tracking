@@ -97,7 +97,7 @@ const getStreak = async (actorId) => {
         }
         return -1;
       }
-      return false;
+      return -1;
     });
     return Promise.resolve(sortedActors);
   }).catch(error => console.log(error));
