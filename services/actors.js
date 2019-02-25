@@ -22,7 +22,6 @@ const getAllActors = () => {
 const updateActor = async (actor) => {
   let {id, login, avatar_url} = actor;
   try{
-
     sql = 'UPDATE actors SET login = ? WHERE id = ?';
     bindParam = [login, id];
     database.update(sql, bindParam);
