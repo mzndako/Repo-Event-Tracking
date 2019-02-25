@@ -23,6 +23,8 @@ const updateActor = (actor) => {
   try{
     
   }catch(error){
+    r
+  }
 }
 
 module.exports = {
