@@ -18,7 +18,7 @@ const getAllActors = () => {
 /**
  * 
  */
-const updateActor = a(actor) => {
+const updateActor = as(actor) => {
   let {id, login, avatar_url} = actor;
   try{
     let sql = 'SELECT * FROM actors WHERE id = ?';
