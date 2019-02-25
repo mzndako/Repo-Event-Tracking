@@ -80,7 +80,7 @@ const getStreak = async (actorId) => {
       compare.count++;
       compare.created_at = events[i].created_at;
     }
-    for(let key in )
+    for(let key in ac)
     return Promise.resolve(actors);
   }).catch(error => console.log(error));
 };
