@@ -22,7 +22,6 @@ const getAllActors = () => {
 const updateActor = async (actor) => {
   let {id, login, avatar_url} = actor;
   try{
-
     let dbActor = result[0];
     if(dbActor.avatar_url !== avatar_url){
       return Promise.reject(400); // Not allowed to update the avatar_url
