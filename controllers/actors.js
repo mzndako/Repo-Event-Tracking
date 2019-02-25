@@ -8,7 +8,7 @@ var getAllActors = (req, res) => {
 };
 
 var updateActor = (req, res) => {
-  let actor 
+  let actor = req.body
 };
 
 var getStreak = () => {
