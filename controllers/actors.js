@@ -11,6 +11,8 @@ var updateActor = (req, res) => {
   let actor = req.body.actor;
   actorsServices.getActor(actor.id).then(retrievedActor => {
     if(!retrievedActor){
+      retur
+    }
   })
 };
 
