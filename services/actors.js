@@ -9,7 +9,8 @@ const getAllActors = () => {
   return database.find(sql).then(events => {
     let results = events.map(event => {
       let newEvent = {
-        id: event
+        id: event.id,
+        
       }
     })
     return Promise.resolve(results);
