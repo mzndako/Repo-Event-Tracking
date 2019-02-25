@@ -47,7 +47,7 @@ const updateActor = async (actor) => {
 
 /**
  * Get an actor detail
- * @para
+ * @param actor
  */
 
 module.exports = {
