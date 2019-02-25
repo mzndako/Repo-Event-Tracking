@@ -23,7 +23,7 @@ const updateActor = async (actor) => {
   let {id, avatar_url} = actor;
   try{
     let sql = 'UPDATE actors SET login = ? WHERE id = ?';
-    let bindParam = [login, id];
+    let bindParam = [, id];
     await database.update(sql, bindParam);
 
     return Promise.resolve('Updated');
