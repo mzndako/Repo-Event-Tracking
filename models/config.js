@@ -11,7 +11,7 @@ db.setupDatabase = async () => {
 }
 
 db.dropAllTables = async () => {
-  
+  a
 }
 
 /**
