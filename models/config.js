@@ -1,5 +1,5 @@
 const sqlite = require('sqlite3').verbose()
-var db = new sqlite.Database('database/db1.sqlite')
+var db = new sqlite.Database('database/db.sqlite')
 
 /**
  * Call the function to setup the database
@@ -69,7 +69,7 @@ db.delete = async (query) => {
   return await db.run(query)
 }
 
-db.setupDatabase(t);
+db.setupDatabase(true);
 
 db.find('SELECT * FROM events ')
 //db.insert("UPDATE actors SET login = ? WHERE id=?", ['mz', 3213163])
