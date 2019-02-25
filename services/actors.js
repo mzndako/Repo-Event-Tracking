@@ -81,8 +81,8 @@ const getStreak = async (actorId) => {
       compare.created_at = events[i].created_at;
     }
     
-    if (compare.id && compare.id !== actor.id) {
-       if (!actors[compare.id].count || actors[compare.id].count < compare.count) {
+    if (compare.id) {
+      if (!actors[compare.id].count || actors[compare.id].count < compare.count) {
         actors[compare.id].count = compare.count;
         actors[compare.id].created_at = compare.created_at;
       }
