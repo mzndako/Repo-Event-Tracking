@@ -11,7 +11,7 @@ db.setupDatabase = async () => {
 }
 
 db.dropAllTables = async () => {
-  await db.r
+  await db.run('')
 }
 
 /**
