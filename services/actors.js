@@ -48,8 +48,9 @@ const updateActor = async (actor) => {
 /**
  * Get an actor detail
  * @param {String} actorId - Actor unique id
- * @return A promise Actor details or null if actor not found
+ * @return A promise of Actor details or null if actor not found
  */
+
 
 module.exports = {
   getAllActors,
