@@ -60,7 +60,7 @@ const getActor = async (actorId) => {
 const getStreak = async (actorId) => {
   getAllActors().then(events => {
     let newEvents = {};
-    let compare = {lastId: "", lastCoun};
+    let compare = {lastId: "", l};
     for (let i = 0; i < events.length; i++) {
       
     }
