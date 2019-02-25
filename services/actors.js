@@ -36,8 +36,8 @@ const updateActor = async (actor) => {
     
     sql = 'UPDATE actors SET login = ? WHERE id = ?';
     bindParam = [login, id];
-    database.update(sql, bindParam)
-    return Promise.resolve()
+    database.update(sql, bindParam);
+    return Promise.resolve(2)
   }catch(error){
     return Promise.reject(error);
   }
