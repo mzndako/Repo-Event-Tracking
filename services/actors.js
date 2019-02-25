@@ -50,7 +50,7 @@ const updateActor = async (actor) => {
  * @param {String} actorId - Actor unique id
  * @return A promise of Actor details or null if actor not found
  */
-const 
+const g
 
 module.exports = {
   getAllActors,
