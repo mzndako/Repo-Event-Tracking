@@ -72,7 +72,7 @@ const getStreak = async (actorId) => {
         compare.count = 0;
       }
       compare.id = actor.id;
-      compare.count
+      compare.count++;
     }
   });
 };
