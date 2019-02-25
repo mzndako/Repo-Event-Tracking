@@ -4,7 +4,7 @@ const database = require('./../models/config');
  * Retrieve all events
  */
 const getAllEvents = () => {
-  let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id ORDER B';
+  let sql = 'SELECT events.id as event_id, * FROM events INNER JOIN repos ON events.repo_id = repos.id INNER JOIN actors ON events.actor_id = actors.id ORDER BY i';
 
   return database.find(sql).then(events => {
     let results = processEvents(events);
