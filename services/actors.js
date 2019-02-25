@@ -19,5 +19,6 @@ const getAllActors = () => {
  * 
  */
 const updateActor = (actor) => {
-  let { id, login, avatar_url } = actor
+  let { id, login, avatar_url } = actor;
+  
 }
