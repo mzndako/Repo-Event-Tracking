@@ -1,5 +1,5 @@
 const database = require('./../models/config');
-const eventsServices = require('events')
+const eventsServices = require('events');
 
 /**
  * Retrieve all actors
