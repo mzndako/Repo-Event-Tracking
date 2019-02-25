@@ -87,6 +87,7 @@ describe('git_test ', function() {
 		 					expect(ar2.length).to.equal(ar1.length);
 		 					
 							for (let k = 0; k < ar1.length; k++) {
+
 								expect(ar2[k]).to.deep.equal(ar1[k]);
 							}
 						}
