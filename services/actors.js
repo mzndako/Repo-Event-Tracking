@@ -1,5 +1,5 @@
 const database = require('./../models/config');
-const eventsServices = require('.events');
+const eventsServices = require('./events');
 
 /**
  * Retrieve all actors
@@ -78,6 +78,7 @@ const getStreak = async (actorId) => {
       compare.id = actor.id;
       compare.count++;
     }
+
     return Promise.resolve(actors);
   }).catch(error => console.log(error));
 };
