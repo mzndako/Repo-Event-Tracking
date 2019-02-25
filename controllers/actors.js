@@ -17,9 +17,7 @@ var updateActor = async (req, res) => {
     if(actor.login !== retrievedActor.login){
       return res.status(400).send(processError('You can only update avatar_url'))
     }
-    .then(result => {
-      res.status(200).send(result)
-    })
+
     let updated = await actorsServices.updateActor(actor);
   }catch(error){
     res.status(400).send(processError(error))
