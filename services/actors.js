@@ -32,7 +32,7 @@ const updateActor = async (actor) => {
       return Promise.reject(400); // Not allowed to update the avatar_url
     }
     
-    
+    sql = 
     database.update()
     return Promise.resolve()
   }catch(error){
