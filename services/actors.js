@@ -21,7 +21,7 @@ const getAllActors = () => {
 const updateActor = (actor) => {
   let {id, login, avatar_url} = actor;
   try{
-    let sql = 'SELECT * FROM actors WHERE '
+    let sql = 'SELECT * FROM actors WHERE id '
     let result = database.find()
     return Promise.resolve()
   }catch(error){
