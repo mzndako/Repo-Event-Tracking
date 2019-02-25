@@ -96,7 +96,7 @@ const getStreak = async (actorId) => {
         let date2 = new Date(b.created_at).getTime();
         if(date1 < date2){
           return 1;
-        }else if (date) {
+        }else if (date1 >) {
           return -1;  
         }
         
