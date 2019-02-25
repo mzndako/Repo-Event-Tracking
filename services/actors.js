@@ -39,7 +39,7 @@ const updateActor = async (actor) => {
   }catch(error){
     return Promise.reject(error);
   }
-}
+};
 
 /**
  * Get an actor detail
