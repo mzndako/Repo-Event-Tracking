@@ -102,7 +102,7 @@ const getStreak = async (actorId) => {
       }
       if (a.login < b.login) {
         return 1;
-      }e
+      } else {
       return 0;
     });
     // sortedActors = sortedActors.map(actor => {
