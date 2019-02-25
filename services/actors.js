@@ -66,6 +66,7 @@ const getStreak = async (actorId) => {
       if(!actors[actor.id]){
         actors[actor.id] = actor;
       }
+
       if(compare.id && compare.id !== actor.id){
         
       }
