@@ -22,10 +22,7 @@ const getAllActors = () => {
 const updateActor = async (actor) => {
   let {id, login, avatar_url} = actor;
   try{
-    
-    
-    
-    
+
     let dbActor = result[0];
     if(dbActor.avatar_url !== avatar_url){
       return Promise.reject(400); // Not allowed to update the avatar_url
@@ -34,7 +31,7 @@ const updateActor = async (actor) => {
     sql = 'UPDATE actors SET login = ? WHERE id = ?';
     bindParam = [login, id];
     database.update(sql, bindParam);
-  
+
     return Promise.resolve(200);
   } catch (error) {
     return Promise.reject(error);
