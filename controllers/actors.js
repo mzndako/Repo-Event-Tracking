@@ -18,7 +18,7 @@ var updateActor = (req, res) => {
     }
     actorsServices.updateActor(actor).then(result => {
       res.status(200).send(result)
-    })
+    }).
   })
 };
 
