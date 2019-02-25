@@ -1,5 +1,5 @@
 const database = require('./../models/config');
-const events
+const eventsServices 
 
 /**
  * Retrieve all actors
