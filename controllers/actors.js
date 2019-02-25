@@ -9,7 +9,9 @@ var getAllActors = (req, res) => {
 
 var updateActor = (req, res) => {
   let actor = req.body.actor;
-  actorsServices.getActor(actor.id).then(dbActor =)
+  actorsServices.getActor(actor.id).then(dbActor => {
+    
+  })
 };
 
 var getStreak = () => {
