@@ -63,7 +63,7 @@ const getStreak = async (actorId) => {
     let compare = {id: "", count: 0};
     for (let i = 0; i < events.length; i++) {
       let event = events[i];
-      newEvents = event
+      newEvents
     }
   });
 };
