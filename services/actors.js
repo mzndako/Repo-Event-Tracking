@@ -16,7 +16,8 @@ const getAllActors = () => {
 };
 
 /**
- * Update ac
+ * Update actor
+ * 
  */
 const updateActor = async (actor) => {
   let {id, login, avatar_url} = actor;
