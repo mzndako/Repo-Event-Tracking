@@ -21,6 +21,7 @@ var updateActor = async (req, res) => {
       res.status(200).send(result)
     }).catch
   })
+  }
 };
 
 var getStreak = () => {
