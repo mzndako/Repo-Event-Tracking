@@ -66,6 +66,7 @@ const getStreak = async (actorId) => {
       if(!newEvents[event.actor.id]){
         newEvents[event.actor.id] = event.actor;
       }
+      
     }
   });
 };
