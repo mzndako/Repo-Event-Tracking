@@ -10,7 +10,7 @@ const getAllActors = () => {
     let results = events.map(event => {
       let newEvent = {
         id: event.id,
-        l
+        login
       }
     })
     return Promise.resolve(results);
