@@ -24,3 +24,5 @@ const updateActor = (actor) => {
 }
 
 module.exports = {
+  get
+}
