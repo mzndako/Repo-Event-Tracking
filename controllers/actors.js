@@ -15,6 +15,7 @@ var updateActor = async (req, res) => {
     if(!retrievedActor){
       return res.status(404).send(processError('Actor not found'))
     }
+
     if(actor.login !== retrievedActor.login){
       return res.status(400).send(processError('You can only update avatar_url'))
     }
