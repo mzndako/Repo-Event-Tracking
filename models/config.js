@@ -69,7 +69,7 @@ db.delete = async (query) => {
   return await db.run(query)
 }
 
-// This create the first tables and 
+// This create the first tables and
 db.setupDatabase(true);
 
 module.exports = db
