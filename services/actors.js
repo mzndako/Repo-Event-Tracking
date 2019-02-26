@@ -9,7 +9,7 @@ const getAllActors = () => {
 
   return database.find(sql).then(events => {
     let results = events.map(event => {
-      delete event.event_count;
+      deleteevent.event_count;
       event.date = undefined;
       return event;
     });
