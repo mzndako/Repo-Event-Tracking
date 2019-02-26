@@ -2,7 +2,7 @@
  * Valid a request
  * @param {Object} body - Object you want to validate
  * @param {Object} expectedError - The error message to return for each of the object validator set
- * @return True if validation was all successfull or return 
+ * @return True if validation was all successfull or return a
  */
 const validate = (body, expectedError) => {
  for (let key in expectedError) {
