@@ -97,7 +97,7 @@ const getStreak = async (actorId) => {
       newActors.push(actors[key]);
     }
     let sortedActors = newActors.sort((a, b) => {
-      // Sort base on
+      // Sort base on count
       if (a.count < b.count){
         return 1;
       }
