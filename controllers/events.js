@@ -68,7 +68,7 @@ const getByActor = (req, res) => {
 const eraseEvents = (req, res) => {
   eventsServices.eraseEvents().then(result => {
     res.status(200).send([]);
-  }).catch(error => res.status(400).send(processError(error)))
+  }).catch(error => res.status(400).send(processError(error)));
 };
 
 module.exports = {
