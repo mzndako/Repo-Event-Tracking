@@ -36,7 +36,7 @@ db.find = (query, whereBind = []) => {
       return resolve(result);
     });
   });
-}
+};
 
 /**
  * Insert into a table
