@@ -19,9 +19,8 @@ const getAllEvents = (req, res) => {
  * @param {Object} res - The Response Object
  * @return Response Resource
  */
-const addEvent = async (req, res) => {
-  let all = req.body;
-  for
+const addEvent = ay(req, res) => {
+  let data = req.body;
   let validationRule = {
     'id': 'Please provide a valid Id',
     'type': 'Please provide a type',
