@@ -116,7 +116,7 @@ const getStreak = async (actorId) => {
         }
       }
       
-      // Further sort by login name if the date 
+      // Further sort by login name if the date are the same
       if (a.login < b.login) {
         return 1;
       } else if(a.login > b.login) {
