@@ -6,7 +6,7 @@ var db = new sqlite.Database('database/db1.sqlite')
  */
 db.setupDatabase = async (dropTable) => {
   db.serialize(() => {
-    // Drop the tables if the drop 
+    // Drop the tables if the dropTable
     if (dropTable) {
       db.run('DROP TABLE IF EXISTS events');
       db.run('DROP TABLE IF EXISTS actors');
