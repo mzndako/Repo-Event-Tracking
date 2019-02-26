@@ -127,7 +127,7 @@ const getStreak = async (actorId) => {
       }
     })
     return Promise.resolve(sortedActors);
-  }).catch(error => console.log(error));
+  }).catch(error => (error));
 };
 
 module.exports = {
