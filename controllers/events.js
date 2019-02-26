@@ -50,7 +50,7 @@ const getByActor = (req, res) => {
   if (!actorId) {
     return res.status(400).send(processError('Invalid Actor Id'));
   }
-  \
+
   eventsServices.getByActor(actorId).then(events => {
     if (events.length === 0) {
       return res.status(404).send(processError('Actor Id not found'));
