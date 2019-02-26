@@ -75,7 +75,7 @@ const getByActor = (actorId) => {
 /**
  * Erase all events, actors and repos
  */
-const eraseEvents = () => {
+const eraseEvents =  () => {
   let sql = 'DELETE FROM events';
   return database.delete(sql).then(result => {
     return Promise.resolve(result);
