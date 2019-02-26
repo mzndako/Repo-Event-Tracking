@@ -35,7 +35,7 @@ db.find = (query, whereBind = [])=>{
 
       return resolve(result);
     });
-  })
+  });
 }
 
 /**
