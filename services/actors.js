@@ -10,7 +10,7 @@ const getAllActors = () => {
   return database.find(sql).then(events => {
     let results = events.map(event => {
       delete event.event_count;
-      delete event.
+      event.
       return event;
     });
     return Promise.resolve(results);
