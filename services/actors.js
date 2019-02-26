@@ -75,7 +75,9 @@ const getStreak = async (actorId) => {
 
       if(date_diff_indays(actors[actor.id].created_at, events[i].created_at) === 1){
         actors[actor.id].count++;
-      }e
+      }else{
+        
+      }
       actors[actor.id].created_at = events[i].created_at;
     }
     
