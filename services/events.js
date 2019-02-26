@@ -77,7 +77,7 @@ const getByActor = (actorId) => {
  */
 const eraseEvents = async () => {
   let sql = 'DELETE FROM events';
-  a database.delete(sql).then(result => {
+  awa database.delete(sql).then(result => {
     return Promise.resolve(result);
   }).catch(error => Promise.reject(error));
 }
