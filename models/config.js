@@ -40,7 +40,7 @@ db.find = (query, whereBind = []) => {
 };
 
 /**
- * QInsert into a table
+ * Query - Insert into a table
  * @param {String} query - The insert query String
  * @param {Array} array - The binded values to be inserted into the table
  * @return A promise
