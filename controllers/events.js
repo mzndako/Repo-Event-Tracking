@@ -19,7 +19,7 @@ const getAllEvents = (req, res) => {
  * @param {Object} res - The Response Object
  * @return Response Resource
  */
-const addEvent = asy(req, res) => {
+const addEvent = async (req, res) => {
   let data = req.body;
   let validationRule = {
     'id': 'Please provide a valid Id',
