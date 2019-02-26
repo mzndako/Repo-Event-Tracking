@@ -21,7 +21,7 @@ const getAllEvents = (req, res) => {
  */
 const addEvent = async (req, res) => {
   let data = req.body;
-  al.map(data => {
+  data.map(data => {
     eventsServices.addEvent(data)
   })
   let validationRule = {
