@@ -71,9 +71,5 @@ db.delete = async (query) => {
 
 db.setupDatabase(true);
 
-db.find('SELECT * FROM events ')
-//db.insert("UPDATE actors SET login = ? WHERE id=?", ['mz', 3213163])
-//db.find('SELECT * FROM actors where id = 3213163')
-//db.find('SELECT * FROM repos ')
 
 module.exports = db
