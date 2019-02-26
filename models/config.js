@@ -25,7 +25,7 @@ db.setupDatabase = async (dropTable) => {
  * @param {Array} whereBind - The array of bind value for the where statement
  * @return The query result as a promise
  */
-db.find = (query, whereBind =[])=>{
+db.find = (query, whereBind = [])=>{
   return new Promise((resolve, reject) => {
     db.all(query, whereBind, (err, result) => {
       // console.log(result);
@@ -34,7 +34,7 @@ db.find = (query, whereBind =[])=>{
       };
 
       return resolve(result);
-    })
+    });
   })
 }
 
