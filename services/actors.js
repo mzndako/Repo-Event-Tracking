@@ -60,7 +60,7 @@ const getActor = async (actorId) => {
  * @return A promise of Actor details or null if actor not found
  */
 const getStreak = async (actorId) => {
-  return eventsServices.getAllEvents('created_at ').then(events => {
+  return eventsServices.getAllEvents('created_at ASC').then(events => {
     let actors = {};
     let compare = {id: "", count: 0, created_at: ""};
     //console.log(events);
@@ -106,7 +106,7 @@ const getStreak = async (actorId) => {
       if(a.count === b.count){
         let date1 = new Date(a.created_at).getTime();
         let date2 = new Date(b.created_at).getTime();
-        if(date1 < date2){
+        if(date1  date2){
           return 1;
         } else if (date1 > date2) {
           return -1;  
