@@ -14,7 +14,7 @@ const getAllActors = (req, res) => {
 };
 
 /**
- * Get events by actor
+ * 
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return null
