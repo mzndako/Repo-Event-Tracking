@@ -63,7 +63,7 @@ const getActor = async (actorId) => {
 const getStreak = async (actorId) => {
   return eventsServices.getAllEvents('created_at ASC').then(events => {
     let actors = {};
-    
+  
     for (let i = 0; i < events.length; i++) {
       let actor = events[i].actor;
       if(!actors[actor.id]){
