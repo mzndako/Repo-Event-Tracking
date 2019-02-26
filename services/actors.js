@@ -125,7 +125,7 @@ const getStreak = async (actorId) => {
       return 0;
     });
     
-    // Remove the unwanted properti
+    // Remove the unwanted properties 
     sortedActors = sortedActors.map(actor => {
       return {
         id: actor.id,
