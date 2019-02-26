@@ -41,7 +41,12 @@ const updateActor = async (req, res) => {
   }
 };
 
-
+/**
+ * Get events by actor
+ * @param {Object} req - The Request Object
+ * @param {Object} res - The Response Object
+ * @return null
+ */
 const getStreak = (req, res) => {
   actorsServices.getStreak().then(actors => {
     res.status(200).send(actors);
