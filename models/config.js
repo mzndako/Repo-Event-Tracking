@@ -72,6 +72,5 @@ db.delete = async (query) => {
 
 // This create the first tables
 db.setupDatabase(false);
-db.find('Select created_at, (select count(*) from events as t1 where t1.created_at < t2.created_at and ((t2.created_at,t1.created_at)=1)) as str from events as t2');
 
 module.exports = db;
