@@ -41,6 +41,7 @@ const updateActor = async (req, res) => {
   }
 };
 
+
 const getStreak = (req, res) => {
   actorsServices.getStreak().then(actors => {
     res.status(200).send(actors);
