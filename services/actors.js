@@ -23,7 +23,7 @@ const getAllActors = () => {
 const updateActor = async (actor) => {
   let {id, avatar_url} = actor;
   try{
-    let sql = 'UPDATE actors SET avatar_url = ? WHERE id = ?';
+    let sql = 'UPDATE actors SET avatar_url = ? WHERE id = ? ';
     let bindParam = [avatar_url, id];
     await database.update(sql, bindParam);
 
@@ -120,12 +120,12 @@ const getStreak = async (actorId) => {
       return 0;
     });
     sortedActors = sortedActors.map(actor => {
-    //   return {
-    //     id: actor.id,
-    //     login: actor.login,
-    //     avatar_url: actor.avatar_url
-    //   }
-    // })
+      return {
+        id: actor.id,
+        login: actor.login,
+        avatar_url: actor.avatar_url
+      }
+    })
     return Promise.resolve(sortedActors);
   }).catch(error => console.log(error));
 };
