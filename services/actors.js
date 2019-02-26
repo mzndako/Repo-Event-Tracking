@@ -105,7 +105,7 @@ const getStreak = async (actorId) => {
         return -1;
       }
       
-      // Sort if the 
+      // Sort if the Strea
       if(a.count === b.count){
         let date1 = new Date(a.created_at).getTime();
         let date2 = new Date(b.created_at).getTime();
