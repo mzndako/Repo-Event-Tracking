@@ -112,7 +112,6 @@ const getStreak = async (actorId) => {
           return -1;  
         }
       }
-      console.log("name Comparison", a.created_at, b.created_at, a.login, b.login)
       if (a.login < b.login) {
         return 1;
       } else if(a.login > b.login) {
@@ -121,12 +120,12 @@ const getStreak = async (actorId) => {
       return 0;
     });
     sortedActors = sortedActors.map(actor => {
-    //   return {
-    //     id: actor.id,
-    //     login: actor.login,
-    //     avatar_url: actor.avatar_url
-    //   }
-    // })
+      return {
+        id: actor.id,
+        login: actor.login,
+        avatar_url: actor.avatar_url
+      }
+    })
     return Promise.resolve(sortedActors);
   }).catch(error => console.log(error));
 };
