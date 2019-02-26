@@ -13,7 +13,12 @@ const getAllActors = (req, res) => {
   }).catch(error => res.status(400).send(processError(error)));
 };
 
-
+/**
+ * Get events by actor
+ * @param {Object} req - The Request Object
+ * @param {Object} res - The Response Object
+ * @return null
+ */
 const updateActor = async (req, res) => {
   let actor = req.body;
 
