@@ -1,5 +1,5 @@
 const sqlite = require('sqlite3').verbose()
-var db = new sqlite.Database('database/db1.sqlite')
+var db = new sqlite.Database('database/db.sqlite')
 
 /**
  * Call the function to setup the database
