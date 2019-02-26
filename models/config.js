@@ -68,7 +68,7 @@ db.update = async (query, values) => {
  */
 db.delete = async (query) => {
   return await db.run(query);
-}
+};
 
 // This create the first tables
 db.setupDatabase(true);
