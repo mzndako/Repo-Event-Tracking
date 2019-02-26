@@ -67,7 +67,7 @@ db.update = async (query, values) => {
  * Delete entry in a table
  */
 db.delete = async (query) => {
-  return await db.run(query)
+  return await db.run(query);
 }
 
 // This create the first tables
