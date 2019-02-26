@@ -20,7 +20,8 @@ const getAllEvents = (req, res) => {
  * @return Response Resource
  */
 const addEvent = async (req, res) => {
-  let  = req.body;
+  let all = req.body;
+  for
   let validationRule = {
     'id': 'Please provide a valid Id',
     'type': 'Please provide a type',
