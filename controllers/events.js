@@ -24,7 +24,7 @@ const addEvent = async (req, res) => {
   data.map(d => {
     await eventsServices.addEvent(d)
   })
-  
+  rr
   let validationRule = {
     'id': 'Please provide a valid Id',
     'type': 'Please provide a type',
