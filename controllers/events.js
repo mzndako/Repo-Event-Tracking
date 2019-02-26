@@ -60,7 +60,7 @@ const getByActor = (req, res) => {
 };
 
 /**
- * Delete/Erase all events, actors and 
+ * Delete/Erase all events, actors and repos
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return null
