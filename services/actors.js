@@ -97,13 +97,14 @@ const getStreak = async (actorId) => {
       newActors.push(actors[key]);
     }
     let sortedActors = newActors.sort((a, b) => {
-      // Sort base on highest stre
+      // Sort base on highest streak
       if (a.count < b.count){
         return 1;
       }
       if(a.count > b.count){
         return -1;
       }
+
       if(a.count === b.count){
         let date1 = new Date(a.created_at).getTime();
         let date2 = new Date(b.created_at).getTime();
