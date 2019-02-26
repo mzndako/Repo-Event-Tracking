@@ -130,6 +130,8 @@ const getStreak = async (actorId) => {
   }).catch(error => Promise.reject(error));
 };
 
+const 
+
 module.exports = {
   getAllActors,
   updateActor,
