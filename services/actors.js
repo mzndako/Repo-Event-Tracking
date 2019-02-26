@@ -67,7 +67,7 @@ const getStreak = async (actorId) => {
     for (let i = 0; i < events.length; i++) {
       let actor = events[i].actor;
 
-      // 
+      // C
       if(!actors[actor.id]){
         actors[actor.id] = actor;
         actors[actor.id].count = 1;
