@@ -47,7 +47,7 @@ db.find = (query, whereBind = []) => {
  */
 db.insert = async (query, values) => {
   let statement = db.prepare(query);
-  statement.run(values) // Bind the values
+  statement.run(values); // Bind the values
   return statement.finalize()
 }
 
