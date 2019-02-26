@@ -137,7 +137,7 @@ const getStreak = async (actorId) => {
   }).catch(error => Promise.reject(error));
 };
 
-
+/*
 const date_diff_indays = (date1, date2) => {
   let dt1 = new Date(date1);
   let dt2 = new Date(date2);
