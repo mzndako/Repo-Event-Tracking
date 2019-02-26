@@ -81,7 +81,7 @@ const eraseEvents = async () => {
   await database.delete(sql);
   await database.delete(sql);
   } catch (error) {
-    co
+    
   }
 }
 
