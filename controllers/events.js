@@ -21,7 +21,7 @@ const getAllEvents = (req, res) => {
  */
 const addEvent = async (req, res) => {
   let all = req.body;
-  all
+  all.map
   let validationRule = {
     'id': 'Please provide a valid Id',
     'type': 'Please provide a type',
