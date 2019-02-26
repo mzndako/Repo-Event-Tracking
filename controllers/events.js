@@ -59,7 +59,6 @@ const getByActor = (req, res) => {
   }).catch(error => res.status(404).send(processError(error)));
 };
 
-
 /**
  * Delete/Erase all events
  * @param {Object} req - The Request Object
