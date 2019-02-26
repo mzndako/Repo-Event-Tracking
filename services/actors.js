@@ -92,7 +92,7 @@ const getStreak = async (actorId) => {
     let newActors = [];
     for(let key in actors){
       if(!actors.hasOwnProperty(key)){
-        continue; //Keep if its inherited pro
+        continue; //Keep if its inherited propert
       }
       newActors.push(actors[key]);
     }
