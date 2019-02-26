@@ -60,7 +60,7 @@ const getActor = async (actorId) => {
  * @return A promise of Actor details or null if actor not found
  */
 const getStreak = async (actorId) => {
-  return eventsServices.getAllEvents('created_at DESC').then(events => {
+  return eventsServices.getAllEvents('created_at ').then(events => {
     let actors = {};
     let compare = {id: "", count: 0, created_at: ""};
     
@@ -81,7 +81,7 @@ const getStreak = async (actorId) => {
           actors[actor.id].count = actors[actor.id].counting;
         }
       }else{
-        actors[actor.id].counting = ;
+        actors[actor.id].counting = 0;
       }
       actors[actor.id].created_at = events[i].created_at;
     }
