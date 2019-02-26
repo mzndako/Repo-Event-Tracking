@@ -15,6 +15,7 @@ const validate = (body, expectedError) => {
 
 /**
  * 
+ */
 const processError = (error) => {
  let sendError = {};
  if (typeof error === 'string') {
