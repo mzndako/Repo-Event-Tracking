@@ -21,8 +21,6 @@ const getAllEvents = (req, res) => {
  */
 const addEvent = async (req, res) => {
   let data = req.body;
-
-  console.log(data.length);
   data.map(d => {
     await eventsServices.addEvent(d);
   })
