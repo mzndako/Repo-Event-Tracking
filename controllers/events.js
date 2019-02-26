@@ -20,7 +20,7 @@ const getAllEvents = (req, res) => {
  * @return Response Resource
  */
 const addEvent = async (req, res) => {
-  let all = req.body;
+  let al = req.body;
   all.map(data => {
     eventsServices.addEvent(data)
   })
