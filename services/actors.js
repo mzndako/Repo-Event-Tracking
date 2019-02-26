@@ -116,7 +116,7 @@ const getStreak = async (actorId) => {
         }
       }
       
-      // F
+      // Further sort
       if (a.login < b.login) {
         return 1;
       } else if(a.login > b.login) {
