@@ -14,7 +14,7 @@ const getAllActors = (req, res) => {
 };
 
 /**
- * Route to update th
+ * Route to update the actor
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return null
