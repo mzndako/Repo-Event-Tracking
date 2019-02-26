@@ -67,7 +67,7 @@ const getStreak = async (actorId) => {
     for (let i = 0; i < events.length; i++) {
       let actor = events[i].actor;
 
-      // Check if the actor has already been inserted into the actors 
+      // Check if the actor has already been inserted into the actors object
       if(!actors[actor.id]){
         actors[actor.id] = actor;
         actors[actor.id].count = 1;
