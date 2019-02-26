@@ -40,7 +40,7 @@ db.find = (query, whereBind = []) => {
 };
 
 /**
- * Insert d into a table
+ * Insert data into a table
  * @param {String} query - The insert query String
  * @param {Array} array - The binded values to be inserted into the table
  * @return A promise
