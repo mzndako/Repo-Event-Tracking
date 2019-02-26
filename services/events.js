@@ -79,6 +79,8 @@ const eraseEvents = async () => {
   try{
     let sql = 'DELETE FROM events';
     await database.delete(sql);
+    
+    sql =
     await database.delete(sql);
     return Promise.resolve('Deleted');
   } catch (error) {
