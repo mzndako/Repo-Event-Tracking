@@ -81,7 +81,7 @@ const getStreak = async (actorId) => {
           actors[actor.id].count = actors[actor.id].counting;
         }
       }else{
-        actors[actor.id].counting = 1;
+        actors[actor.id].counting = ;
       }
       actors[actor.id].created_at = events[i].created_at;
     }
