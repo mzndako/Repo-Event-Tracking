@@ -16,7 +16,7 @@ const validate = (body, expectedError) => {
 /**
  * Convert and format the error 
  * @param {Object} error - Error to processError
- * @return The formatted error messag
+ * @return The formatted error message in an 
  */
 const processError = (error) => {
  let sendError = {};
