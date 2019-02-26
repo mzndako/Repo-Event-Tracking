@@ -2,7 +2,7 @@ const sqlite = require('sqlite3').verbose();
 var db = new sqlite.Database('database/db1.sqlite');
 
 /**
- * Call the function to setup the database
+ * Call the function to setup the database 
  */
 db.setupDatabase = async (dropTable) => {
   db.serialize(() => {
