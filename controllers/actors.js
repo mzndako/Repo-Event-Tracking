@@ -42,7 +42,7 @@ const updateActor = async (req, res) => {
 };
 
 /**
- * Get events by actor
+ * Get 
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return null
