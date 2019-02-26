@@ -2,7 +2,7 @@ const actorsServices = require('./../services/actors');
 const {processError} = require('./../services/validator');
 
 /**
- * Route to get all a
+ * Route to get all actors
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return null
