@@ -60,7 +60,7 @@ db.insert = async (query, values) => {
 db.update = async (query, values) => {
   let statement = db.prepare(query);
   statement.run(values); // Bind the values
-  return statement.finalize()
+  return statement.finalize();
 }
 
 /**
