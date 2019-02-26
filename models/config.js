@@ -71,5 +71,4 @@ db.delete = async (query) => {
 
 db.setupDatabase(true);
 
-
 module.exports = db
