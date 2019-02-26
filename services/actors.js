@@ -92,11 +92,12 @@ const getStreak = async (actorId) => {
     let newActors = [];
     for(let key in actors){
       if(!actors.hasOwnProperty(key)){
-        continue; //Keep if its inherited propert
+        continue; //Keep if its inherited property
       }
       newActors.push(actors[key]);
     }
     let sortedActors = newActors.sort((a, b) => {
+
       if (a.count < b.count){
         return 1;
       }
