@@ -1,5 +1,5 @@
 /**
- * Valid request
+ * Valid a request
  * 
  */
 const validate = (body, expectedError) => {
