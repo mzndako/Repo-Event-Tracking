@@ -15,7 +15,7 @@ const validate = (body, expectedError) => {
 
 /**
  * Convert and format the error 
- * @para
+ * @param {
  */
 const processError = (error) => {
  let sendError = {};
