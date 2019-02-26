@@ -141,7 +141,7 @@ const getStreak = async (actorId) => {
  * Calculate the day differences between two date
  * @param {String} date1 - The first date (from date)
  * @param {String} date2 - The second date (to date)
- * @return The number of day(s) between the first
+ * @return The number of day(s) between the first date and the 
  */
 const date_diff_indays = (date1, date2) => {
   let dt1 = new Date(date1);
