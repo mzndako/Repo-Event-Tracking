@@ -1,6 +1,6 @@
 /**
  * Valid a request
- * @param {Object} body - Obj
+ * @param {Object} body - Object you 
  */
 const validate = (body, expectedError) => {
  for (let key in expectedError) {
