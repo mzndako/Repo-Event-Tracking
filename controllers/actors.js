@@ -1,5 +1,6 @@
 const actorsServices = require('./../services/actors');
 const {processError} = require('./../services/validator');
+
 /**
  * Get events by actor
  * @param {Object} req - The Request Object
