@@ -73,7 +73,7 @@ const getByActor = (actorId) => {
 }
 
 /**
- * Erase all events, A
+ * Erase all events, actors
  */
 const eraseEvents = () => {
   let sql = 'DELETE FROM events';
