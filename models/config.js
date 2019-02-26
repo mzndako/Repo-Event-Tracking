@@ -1,4 +1,4 @@
-const sqlite = require('sqlite3').verbose()
+const sqlite = require('sqlite3').verbose();
 var db = new sqlite.Database('database/db1.sqlite')
 
 /**
@@ -6,7 +6,7 @@ var db = new sqlite.Database('database/db1.sqlite')
  */
 db.setupDatabase = async (dropTable) => {
   db.serialize(() => {
-    // Drop the tables if the dropTable parameter is se
+    // Drop the tables if the dropTable parameter is set
     if (dropTable) {
       db.run('DROP TABLE IF EXISTS events');
       db.run('DROP TABLE IF EXISTS actors');
