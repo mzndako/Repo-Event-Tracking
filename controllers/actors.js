@@ -42,7 +42,7 @@ const updateActor = async (req, res) => {
 };
 
 /**
- * Get Actor Streak f
+ * Get Actor Streak for events
  * @param {Object} req - The Request Object
  * @param {Object} res - The Response Object
  * @return null
