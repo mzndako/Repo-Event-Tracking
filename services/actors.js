@@ -124,7 +124,8 @@ const getStreak = async (actorId) => {
       }
       return 0;
     });
-
+    
+    // 
     sortedActors = sortedActors.map(actor => {
       return {
         id: actor.id,
