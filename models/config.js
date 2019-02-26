@@ -71,6 +71,6 @@ db.delete = async (query) => {
 };
 
 // This create the first tables
-db.setupDatabase(false);
+db.setupDatabase();
 
 module.exports = db;
