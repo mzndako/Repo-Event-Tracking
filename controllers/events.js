@@ -19,7 +19,7 @@ const getAllEvents = (req, res) => {
  * @param {Object} res - The Response Object
  * @return Response Resource
  */
-const addEvent = ay(req, res) => {
+const addEvent = (req, res) => {
   let data = req.body;
   let validationRule = {
     'id': 'Please provide a valid Id',
@@ -67,6 +67,7 @@ const getByActor = (req, res) => {
  * @return null
  */
 const eraseEvents = (req, res) => {
+  return res.send();
   eventsServices.eraseEvents().then(result => {
     res.status(200).send([])
   }).catch(error => res.status(400).send(processError(error)))
