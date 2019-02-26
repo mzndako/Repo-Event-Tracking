@@ -83,6 +83,9 @@ const eraseEvents = async () => {
     sql = 'DELETE FROM actors';
     await database.delete(sql);
     
+    sql = 'DELETE FROM actors';
+    await database.delete(sql);
+    
     return Promise.resolve('Deleted');
   } catch (error) {
     return Promise.reject(error);
