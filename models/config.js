@@ -61,7 +61,7 @@ db.update = async (query, values) => {
   let statement = db.prepare(query);
   statement.run(values); // Bind the values
   return statement.finalize();
-}
+};
 
 /**
  * Delete entry in a table
