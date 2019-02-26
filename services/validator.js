@@ -13,6 +13,7 @@ const validate = (body, expectedError) => {
  return true;
 };
 
+
 const processError = (error) => {
  let sendError = {};
  if (typeof error === 'string') {
