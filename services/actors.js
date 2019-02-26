@@ -56,7 +56,7 @@ const getActor = async (actorId) => {
 };
 
 /**
- * Get actor records or
+ * Get actor records order 
  * @param {String} actorId - Actor unique id
  * @return A promise of Actor details or null if actor not found
  */
